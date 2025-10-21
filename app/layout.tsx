@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import {Figtree} from "next/font/google"
 import "./globals.css";
+import Header from "@/components/Header";
 
 const figtree = Figtree({
   weight: ["300", "400", "500", "600", "700", "800"],
@@ -86,6 +87,7 @@ export default function RootLayout({
       <body
         className={`${figtree.className} antialiased`}
       >
+        <Header />
         {children}
       </body>
     </html>
