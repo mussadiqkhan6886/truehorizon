@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 
-const Button = ({text, color, icon, link}: {text: string, color: string, icon?: string, link: string}) => {
+const Button = ({text, color, icon, link}: {text: string, color: string, icon?: React.ReactNode, link: string}) => {
   return (
     <div  
         className={`bg-${color}-700 ${color == "gray" ? "border border-gray-500" : ""} ${icon && "w-[130px]"} overflow-hidden h-[35px] w-[120px] flex items-center justify-center rounded-md font-semibold group text-sm`}
