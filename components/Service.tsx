@@ -11,15 +11,15 @@ interface Props {
 const Service = ({left, title, para, header, points}: Props) => {
 
     const details = (
-    <div className="flex flex-col gap-4 max-w-xl">
-      <div className="text-sm font-semibold uppercase text-blue-600">{header}</div>
+    <div className="flex flex-col items-start gap-4 max-w-lg">
+      <div className="text-sm font-semibold border border-gray-700 px-2.5 py-1.5 mb-2 rounded-md">{header}</div>
       <div>
-        <h3 className="text-3xl font-bold mb-2">{title}</h3>
-        <p className="text-gray-600 mb-4">{para}</p>
-        <ul className="space-y-2 text-gray-700">
+        <h3 className="text-4xl font-semibold mb-2">{title}</h3>
+        <p className="text-gray-200 mb-4">{para}</p>
+        <ul className="flex gap-4">
           {points.map((item, i) => (
-            <li key={i} className="flex items-start gap-2">
-              <span className="text-blue-500">•</span> {item}
+            <li key={i} className="text-sm font-semibold border border-gray-700 px-2.5 py-1.5 mb-2 rounded-md">
+              {item}
             </li>
           ))}
         </ul>
@@ -30,28 +30,32 @@ const Service = ({left, title, para, header, points}: Props) => {
     let imageSection;
 
     if(header.toLowerCase().includes("workflow")){
-        imageSection = <></>
+        imageSection = <div className='w-[400px] h-[300px] bg-gray-700'></div>
     }else if(header.toLowerCase().includes("ai")){
-        imageSection = <></>
+        imageSection = <div className='w-[400px] h-[300px] bg-gray-700'></div>
     }else if(header.toLowerCase().includes("sales")){
-        imageSection = <></>
+        imageSection = <div className='w-[400px] h-[300px] bg-gray-700'></div>
     }else if(header.toLowerCase().includes("projects")){
-        imageSection = <></>
+        imageSection = <div className='w-[400px] h-[300px] bg-gray-700'></div>
     }else {
-        imageSection = <></>
+        imageSection = <div className='w-[400px] h-[300px] bg-gray-700'></div>
     }
 
   return (
-    <section className="flex flex-col md:flex-row items-center justify-between gap-10 py-16">
+    <section className="flex flex-col md:flex-row items-center justify-between gap-24 mb-20 max-w-[980px]">
       {left ? (
         <>
-          {details}
-          {imageSection}
+          <div className='pr-10'>{details}</div>
+          <div>{imageSection}</div>
         </>
       ) : (
         <>
+        <div>
           {imageSection}
+        </div>
+        <div className='pr-10'>
           {details}
+        </div>
         </>
       )}
     </section>
