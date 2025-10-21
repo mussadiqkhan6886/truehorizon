@@ -30,19 +30,19 @@ const Service = ({left, title, para, header, points}: Props) => {
     let imageSection;
 
     if(header.toLowerCase().includes("workflow")){
-        imageSection = <div className='w-[400px] h-[300px] bg-gray-700'></div>
+        imageSection = <div className='w-[450px] h-[370px] rounded-3xl bg-[#0d0d0dcc] p-[50px] pb-0'></div>
     }else if(header.toLowerCase().includes("ai")){
-        imageSection = <div className='w-[400px] h-[300px] bg-gray-700'></div>
+        imageSection = <div className='w-[450px] h-[370px] rounded-3xl bg-[#0d0d0dcc] p-[50px] pb-0'></div>
     }else if(header.toLowerCase().includes("sales")){
-        imageSection = <div className='w-[400px] h-[300px] bg-gray-700'></div>
+        imageSection = <div className='w-[450px] h-[370px] rounded-3xl bg-[#0d0d0dcc] p-[50px] pb-0'></div>
     }else if(header.toLowerCase().includes("projects")){
-        imageSection = <div className='w-[400px] h-[300px] bg-gray-700'></div>
+        imageSection = <div className='w-[450px] h-[370px] rounded-3xl bg-[#0d0d0dcc] p-[50px] pb-0'></div>
     }else {
-        imageSection = <div className='w-[400px] h-[300px] bg-gray-700'></div>
+        imageSection = <div className='w-[450px] h-[370px] rounded-3xl bg-[#0d0d0dcc] p-[50px] pb-0'></div>
     }
 
   return (
-    <section className="flex flex-col md:flex-row items-center justify-between gap-24 mb-20 max-w-[980px]">
+    <section className="flex flex-col md:flex-row items-center justify-between gap-24 mb-20 max-w-[1020px]">
       {left ? (
         <>
           <div className='pr-10'>{details}</div>
