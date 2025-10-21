@@ -4,7 +4,7 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <header className='bg-black fixed animate-[slideDown_1s_ease-out_forwards] top-0 z-50 w-full py-4 border-b border-gray-700 text-white px-12 flex justify-between items-center'>
+    <header className='bg-black fixed animate-[slideDown_3s_ease-out_forwards] top-0 z-50 w-full py-4 border-b border-gray-700 text-white px-12 flex justify-between items-center'>
       <div>
         <h1 className='font-[800] text-[20px]'>True Horizon</h1>
       </div>

@@ -5,9 +5,34 @@
     0% {
       transform: translateY(-100%);
       opacity: 0;
+      display: none;
+    }
+    50%{
+        transform: translateY(-100%);
+      opacity: 0;
+        display: none;
     }
     100% {
       transform: translateY(0);
       opacity: 1;
+      display: flex;
+    }
+  }
+
+@keyframes show {
+    0% {
+      width: 0;
+      opacity: 0;
+      display: none;
+    }
+    50%{
+        width: 0;
+        opacity: 0;
+        display: none;
+    }
+    100% {
+      width: 100%;
+      opacity: 1;
+      display: block;
     }
   }
