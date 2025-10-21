@@ -1,7 +1,12 @@
 import React from 'react'
 import Orb from './ORB'
+import { TextGenerateEffect } from './ui/TextGenerateEffect';
+import Button from './Button';
+import {FiArrowRight} from "react-icons/fi"
 
 const Hero = () => {
+    const Heading = `True Horizon That Builds, Not Just Advises.`;
+    const para = `We don’t hand you a strategy deck. We implement real AI systems—agents, automations, and dashboards that move the needle.`
   return (
     <section className='bg-black' style={{ width: '100%', height: '600px', position: 'relative' }}>
         <Orb
@@ -10,10 +15,18 @@ const Hero = () => {
             hue={313}
             forceHoverState={false}
         />
-        <div className='bg-black flex text-white items-center justify-center min-h-screen'>
+        <div className='bg-black px-[160px] flex flex-col text-white items-center justify-center min-h-screen'>
             <div className='flex items-center justify-center gap-3 font-[500] p-0.5 rounded-2xl'>
                 <div className='bg-purple-700 rounded-xl px-2'>New</div>
                 <div className='pr-2 overflow-hidden whitespace-nowrap animate-[show_5s_ease-out_forwards]'>Automated Voice Agent X Dashboard</div>
+            </div>
+            <TextGenerateEffect className='text-[70px] tracking-tight leading-[74px] text-center font-bold' duration={1} filter={true} words={Heading} />
+            <div className='px-50'>
+                <TextGenerateEffect className='text-base leading-snug tracking-wide text-center font-normal text-gray-300' duration={1.5} filter={true} words={para} />
+            </div>
+            <div className='flex gap-7 mt-5'>
+                <Button text='Get in touch' color='purple' icon={<FiArrowRight className='inline' />} link='/call' />
+                <Button text='View Services' color='gray' link='#services' />
             </div>
         </div>
     </section>

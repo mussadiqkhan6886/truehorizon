@@ -1,6 +1,7 @@
 import { menu } from '@/lib/constants'
 import Link from 'next/link'
 import React from 'react'
+import Button from './Button'
 
 const Header = () => {
   return (
@@ -14,24 +15,7 @@ const Header = () => {
                 <li key={i}><Link href={item.link}>{item.title}</Link></li>
             ))}
         </ul>
-        <div  
-            className="bg-purple-700 overflow-hidden h-[35px] w-[95px] flex items-center justify-center rounded-md font-semibold group"
-        >
-            <Link  href="/call"  className='overflow-hidden relative h-[20px] w-full  flex items-center justify-center'>
-                <span
-                    className="absolute transition-all duration-400 ease-in-out group-hover:-translate-y-full"
-                >
-                    Book a call
-                </span>
-
-                <span
-                    className="absolute translate-y-full transition-all duration-400 ease-in-out group-hover:translate-y-0"
-                >
-                    Book a call
-                </span>
-            </Link>
-        </div>
-
+        <Button text='Book a call' color='purple' link='/call' />
       </nav>
     </header>
   )
