@@ -12,13 +12,13 @@ const Service = ({left, title, para, header, points}: Props) => {
 
     const details = (
     <div className="flex flex-col items-start gap-4 max-w-lg">
-      <div className="text-sm font-semibold border border-gray-700 px-2.5 py-1.5 mb-2 rounded-md">{header}</div>
+      <div className="text-sm font-[500] border border-gray-700 px-2.5 py-1.5 mb-2 rounded-md">{header}</div>
       <div>
         <h3 className="text-4xl font-semibold mb-2">{title}</h3>
         <p className="text-gray-200 mb-4">{para}</p>
         <ul className="flex gap-4">
           {points.map((item, i) => (
-            <li key={i} className="text-sm font-semibold border border-gray-700 px-2.5 py-1.5 mb-2 rounded-md">
+            <li key={i} className="text-sm font-[500] border border-gray-700 px-2.5 py-1.5 mb-2 rounded-md">
               {item}
             </li>
           ))}
