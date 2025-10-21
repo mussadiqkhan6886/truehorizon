@@ -8,7 +8,7 @@ const Header = () => {
       <div>
         <h1 className='font-[800] text-[20px]'>True Horizon</h1>
       </div>
-      <nav className='flex gap-8 text-sm items-center'>
+      <nav className='hidden md:flex gap-8 text-sm items-center'>
         <ul className='flex gap-8'>
             {menu.map((item, i) => (
                 <li key={i}><Link href={item.link}>{item.title}</Link></li>
