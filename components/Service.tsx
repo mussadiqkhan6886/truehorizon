@@ -1,4 +1,5 @@
 import React from 'react'
+import { InfiniteMovingCardsDemo } from './ui/VerticalMoving';
 
 interface Props {
     left: boolean,
@@ -30,7 +31,16 @@ const Service = ({left, title, para, header, points}: Props) => {
     let imageSection;
 
     if(header.toLowerCase().includes("workflow")){
-        imageSection = <div className='w-[450px] h-[370px] rounded-3xl bg-[#0d0d0dcc] p-[50px] pb-0'></div>
+        imageSection = <div className='w-[450px] relative h-[370px] rounded-3xl bg-[#0d0d0dcc] p-[50px] pb-0'>
+          <div className='bg-black rounded-r-2xl border-b-0 p-4 border-gray-400/30 h-full border'>
+            <div className='border-gray-400/20 p-1 text-[12px] bg-gray-400/10 border mb-2 flex gap-3'>
+              <div className='bg-gray-700/60 px-0.5'>All Tasks</div>
+              <div>Waiting for approval</div>
+            </div>
+            <InfiniteMovingCardsDemo />
+          </div>
+          <div className='bg-gradient-to-t from-[rgb(8,8,8)] to-transparent  absolute bottom-0 w-full h-[35px] left-0 z-10' />
+        </div>
     }else if(header.toLowerCase().includes("ai")){
         imageSection = <div className='w-[450px] h-[370px] rounded-3xl bg-[#0d0d0dcc] p-[50px] pb-0'></div>
     }else if(header.toLowerCase().includes("sales")){
