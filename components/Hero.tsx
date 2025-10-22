@@ -9,7 +9,7 @@ const Hero = () => {
     const Heading = `True Horizon That Builds, Not Just Advises.`;
     const para = `We don’t hand you a strategy deck. We implement real AI systems—agents, automations, and dashboards that move the needle.`
   return (
-    <section className='' style={{ width: '100%', height: '600px', position: 'relative' }}>
+    <section className='min-h-screen' style={{ width: '100%', height: '600px', position: 'relative' }}>
         <Orb
             hoverIntensity={0.13}
             rotateOnHover={true}
