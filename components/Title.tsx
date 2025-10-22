@@ -1,7 +1,8 @@
 'use client';
 
 import React from 'react'
-import { motion, Variants } from 'framer-motion'
+import { motion } from 'framer-motion'
+import { variants } from '@/lib/constants';
 
 interface TitleProps {
   buttonHeading: string
@@ -11,19 +12,6 @@ interface TitleProps {
 
 const Title = ({ buttonHeading, title, para }: TitleProps) => {
 
-  const variants = {
-    hidden: {
-      opacity: 0,
-      y: 40, 
-    },
-    show: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.5, // 0.5s animation speed
-      }
-    }
-  } as Variants
 
   return (
     <motion.div

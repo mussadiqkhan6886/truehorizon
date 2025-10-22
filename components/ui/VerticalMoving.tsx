@@ -1,10 +1,11 @@
+import { FiCheck, FiClipboard, FiClock, FiCrosshair, FiDollarSign, FiLoader, FiMenu, FiUsers } from "react-icons/fi";
 import { InfiniteMovingCards } from "./GoingUp";
 
 export function InfiniteMovingCardsDemo() {
   return (
     <div className="h-[90%] rounded-md flex flex-col antialiased items-center justify-center relative overflow-hidden">
       <InfiniteMovingCards
-        items={testimonials}
+        items={data}
         direction="up"
         speed="fast"
       />
@@ -12,34 +13,37 @@ export function InfiniteMovingCardsDemo() {
   );
 }
 
-const testimonials = [
+
+const data = [
   {
-    quote:
-      "it was the worst",
-    name: "Charles Dickens",
-    title: "A Tale of Two Cities",
+    icon: <FiMenu />,
+    subheading: "70% prepared",
+    title: "Lead List",
+    image: <FiLoader />
   },
   {
-    quote:
-      "that is the question:",
-    name: "William Shakespeare",
-    title: "Hamlet",
+    icon: <FiClock />,
+    subheading: "sent to selected clients",
+    title: "Payment reminder",
+    image: <FiCheck />,
   },
   {
-    quote: "seem is but wi.",
-    name: "Edgar Allan Poe",
-    title: "A Dream Within a Dream",
+    icon: <FiDollarSign />,
+    subheading: "Due on 2nd july",
+    title: "Payroll management",
+    image: <FiClock />,
   },
   {
-    quote:
-      "acknowledged, .",
-    name: "Jane Austen",
-    title: "Pride and Prejudice",
+    icon: <FiUsers />,
+    subheading: "2 days ago",
+    title: "Employee Tracking",
+    image: <FiCheck />,
   },
   {
-    quote:
-      "would sail about .",
-    name: "Herman Melville",
-    title: "Moby-Dick",
+    icon: <FiClipboard />,
+    subheading: "Social media post",
+    title: "Cancelled by user",
+    image: <FiCrosshair />,
   },
+  
 ];
