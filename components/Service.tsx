@@ -1,6 +1,7 @@
 import React from 'react'
-import { InfiniteMovingCardsDemo } from './ui/VerticalMoving';
 import WorkFlow from './WorkFlow';
+
+import AI from './AI';
 
 interface Props {
     left: boolean,
@@ -34,7 +35,7 @@ const Service = ({left, title, para, header, points}: Props) => {
     if(header.toLowerCase().includes("workflow")){
         imageSection = <WorkFlow />
     }else if(header.toLowerCase().includes("ai")){
-        imageSection = <div className='w-[450px] h-[370px] rounded-3xl bg-[#0d0d0dcc] p-[50px] pb-0'></div>
+        imageSection = <AI />
     }else if(header.toLowerCase().includes("sales")){
         imageSection = <div className='w-[450px] h-[370px] rounded-3xl bg-[#0d0d0dcc] p-[50px] pb-0'></div>
     }else if(header.toLowerCase().includes("projects")){
