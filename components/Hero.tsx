@@ -29,13 +29,13 @@ const Hero = () => {
         />
         </div> */}
         
-        <div className='z-50 px-[160px] flex flex-col text-white items-center justify-center min-h-screen'>
-            <div className='flex items-center justify-center gap-3 font-[500] p-0.5 rounded-2xl'>
+        <div className='z-50 px-[35px] md:px-[70px] lg:px-[160px] flex flex-col text-white items-center justify-center min-h-screen'>
+            <div className='flex items-center justify-center gap-3 font-[500] p-0.5 rounded-2xl bg-black z-10'>
                 <div className='bg-purple-700 rounded-xl px-2'>New</div>
                 <div className='pr-2 text-sm overflow-hidden whitespace-nowrap animate-[show_5s_ease-out_forwards]'>Automated Voice Agent X Dashboard</div>
             </div>
-            <TextGenerateEffect className='text-[70px] tracking-tight leading-[74px] text-center font-bold' duration={1} filter={true} words={Heading} />
-            <div className='px-50'>
+            <TextGenerateEffect className='text-[45px] md:text-[70px] tracking-tight md:leading-[74px] leading-14 text-center font-bold' duration={1} filter={true} words={Heading} />
+            <div className='px-0 md:px-26 lg:px-50'>
                 <TextGenerateEffect className='text-base leading-snug tracking-wide text-center font-normal text-gray-300' duration={1.5} filter={true} words={para} />
             </div>
             <div className='flex z-50 gap-7 mt-5'>
