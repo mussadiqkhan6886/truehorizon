@@ -9,8 +9,8 @@ import {motion} from "framer-motion";
 
 const AI = () => {
   return (
-    <motion.div variants={variants} initial="hidden" whileInView={"show"} viewport={{once: true, amount: 0.2}} className='w-[450px] text-white relative h-[370px] rounded-3xl bg-[#0d0d0dcc] p-[50px] pb-0'>
-          <div  className='bg-black w-full rounded-2xl gap-1 border-b-0 flex justify-center flex-col items-center p-4 border-zinc-900 h-full border'>
+    <div className='w-[450px] text-white relative h-[370px] rounded-3xl bg-[#0d0d0dcc] p-[50px] pb-0'>
+          <motion.div variants={variants} initial="hidden" whileInView={"show"} viewport={{once: true, amount: 0.2}}  className='bg-black w-full rounded-2xl gap-1 border-b-0 flex justify-center flex-col items-center p-4 border-zinc-900 h-full border'>
             <div className='grid place-content-center'>
               <Orb
                   smaller={true}
@@ -58,9 +58,9 @@ const AI = () => {
                 <p>Research</p>
               </div>
             </div>
-          </div>
+          </motion.div>
           <div className='bg-gradient-to-t from-[rgb(8,8,8)] to-transparent  absolute bottom-0 w-full h-[45px] left-0 z-10' />
-        </motion.div>
+        </div>
   )
 }
 
