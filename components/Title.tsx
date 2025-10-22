@@ -22,9 +22,9 @@ const Title = ({ buttonHeading, title, para }: TitleProps) => {
       className="relative flex items-center py-10 justify-center flex-col gap-5"
     >
       <div className="text-sm font-semibold border border-gray-700 px-2.5 py-1.5 mb-2 rounded-md">{buttonHeading}</div>
-      <div className='px-30 flex items-center gap-5 flex-col'>
-        <h2 className="text-[50px] w-[80%] leading-14 text-center px-10 font-semibold">{title}</h2>
-        <p className="text-gray-300 w-[600px]  text-center text-[18px]">{para}</p>
+      <div className='md:px-30 flex items-center gap-3 md:gap-5 flex-col'>
+        <h2 className="text-[27px] md:text-[50px] xl:w-[80%] md:leading-14 text-center md:px-10 font-semibold">{title}</h2>
+        <p className="text-gray-300 w-full md:w-[600px] text-center px-4 text-[15px] sm:text-[18px]">{para}</p>
       </div>
     </motion.div>
   )
