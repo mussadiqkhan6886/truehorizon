@@ -4,6 +4,13 @@ import { RiFileChartLine } from "react-icons/ri";
 import { MdSpeed, MdBuild } from "react-icons/md";
 import { FiRepeat } from "react-icons/fi";
 import { FiMessageSquare, FiSettings, FiTrendingUp } from "react-icons/fi";
+import {
+  FiBarChart2,
+  FiUsers,
+  FiClock,
+  FiDollarSign,
+  FiLayers,
+} from "react-icons/fi";
 
 export const menu = [
     {title: "Home", link: "/"},
@@ -41,4 +48,44 @@ export const smartData = [
   {icon: MdBuild , title: "Manual work"},
   {icon: FiRepeat  , title: "Repetative task"}
 ]
+
+
+export const aiBenefitsData = [
+  {
+    title: "Increased Productivity",
+    detail:
+      "Gain actionable insights with AI-driven analytics to improve decision-making and strategy.",
+    icon: FiBarChart2,
+  },
+  {
+    title: "Better Customer Experience",
+    detail:
+      "Personalized AI interactions improve response times, customer engagement, and overall satisfaction.",
+    icon: FiUsers,
+  },
+  {
+    title: "24/7 Availability",
+    detail:
+      "AI-powered systems operate around the clock, ensuring seamless support and execution without downtime.",
+    icon: FiClock,
+  },
+  {
+    title: "Cost Reduction",
+    detail:
+      "AI automation minimizes manual work, cuts operational costs, and optimizes resource allocation for better profitability.",
+    icon: FiDollarSign,
+  },
+  {
+    title: "Data-Driven Insights",
+    detail:
+      "Leverage AI to analyze vast data sets, identify trends, and make smarter, faster, and more accurate business decisions.",
+    icon: FiTrendingUp,
+  },
+  {
+    title: "Scalability & Growth",
+    detail:
+      "AI adapts to your business needs, allowing you to scale efficiently without increasing workload or costs.",
+    icon: FiLayers,
+  },
+];
 

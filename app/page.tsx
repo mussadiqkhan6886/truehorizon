@@ -1,3 +1,4 @@
+import Benefits from "@/components/Benefits";
 import Hero from "@/components/Hero";
 import Process from "@/components/Process";
 import Services from "@/components/Services";
@@ -10,6 +11,7 @@ export default function Home() {
       <Services />
       <Process />
       <Study />
+      <Benefits />
     </main>
   );
 }

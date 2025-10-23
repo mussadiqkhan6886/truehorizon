@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const Study = () => {
   return (
-    <section className='py-10 text-white'>
+    <section className='py-10 mb-10 text-white'>
       <Title buttonHeading='Case Studies' firstLine='Case Study — The' secondLine="Village of Robbins" para='Smart Government Systems for a Smarter Community' />
       <div className='flex mt-10 gap-12 max-w-[940px]  mx-auto'>
         <div className='flex-1 w-[50%] overflow-hidden relative'>
