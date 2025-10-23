@@ -1,10 +1,35 @@
 import React from 'react'
 import Title from './Title'
+import Image from 'next/image'
 
 const Study = () => {
   return (
     <section className='py-10 text-white'>
       <Title buttonHeading='Case Studies' firstLine='Case Study — The' secondLine="Village of Robbins" para='Smart Government Systems for a Smarter Community' />
+      <div className='flex mt-10 gap-12 max-w-[940px]  mx-auto'>
+        <div className='flex-1 w-[50%] overflow-hidden relative'>
+            <Image src={"/studyImage.png"} className='w-full h-full object-center object-cover scale-110' width={500} height={500} alt='image study' />
+            <div className='absolute -left-10 w-[100px] z-10 top-0 h-full bg-gradient-to-r from-black to-black/10' />
+        </div>
+        <div className='w-[50%]'>
+            <div>
+
+            </div>
+            <div className=' pr-6'>
+                <h5 className="text-2xl font-semibold mb-3 pr-10">"Smart Government Systems <br /> for a Smarter Community"</h5>
+                <p className="text-zinc-300 mb-6 pr-10 text-base">The Village of Robbins struggled with slow permit processing, scattered citizen requests, and rising admin costs. A.I Consulting built CivicFlow, an AI system that automated service routing, introduced a 24/7 resident chatbot, and gave administrators real-time dashboards for public works and budgeting.</p>
+                <div>
+                    <h6 className='mb-2 text-zinc-300'>Impact : </h6>
+                    <ul className='flex gap-1 font-[500] flex-col list-disc pl-6'>
+                        <li className='pl-2'>58% faster request resolution</li>
+                        <li className='pl-2'>40% less admin workload</li>
+                        <li className='pl-2'>$75k annual cost savings</li>
+                        <li className='pl-2'>24/7 citizen access via AI assistant</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
     </section>
   )
 }
