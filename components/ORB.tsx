@@ -9,6 +9,7 @@ interface OrbProps {
   rotateOnHover?: boolean;
   forceHoverState?: boolean;
   smaller?: boolean
+  s?: number
 }
 
 export default function Orb({
@@ -16,7 +17,8 @@ export default function Orb({
   hoverIntensity = 0.2,
   rotateOnHover = true,
   forceHoverState = false,
-  smaller = false
+  smaller = false,
+  s = 85
 }: OrbProps) {
   const ctnDom = useRef<HTMLDivElement>(null);
 
@@ -281,5 +283,5 @@ export default function Orb({
     };
   }, [hue, hoverIntensity, rotateOnHover, forceHoverState]);
 
-  return <div ref={ctnDom} className={` ${smaller ? "w-[85px] h-[85px]" : "w-full h-full absolute"} `} />;
+  return <div ref={ctnDom} className={` ${smaller ? `w-[60px] h-[60px]` : "w-full h-full absolute"} `} />;
 }

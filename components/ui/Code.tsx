@@ -7,10 +7,10 @@ export const InfiniteMovingCode = ({
   items,
   direction = "up",
   speed = "fast",
-  pauseOnHover = false,
+  pauseOnHover,
   className,
 }: {
-  items: React.ReactNode;
+  items?: React.ReactNode;
   direction?: "up" | "down";
   speed?: "fast" | "normal" | "slow";
   pauseOnHover?: boolean;
@@ -18,12 +18,11 @@ export const InfiniteMovingCode = ({
 }) => {
   const containerRef = React.useRef<HTMLDivElement>(null);
   const scrollerRef = React.useRef<HTMLUListElement>(null);
+  const [start, setStart] = useState(false);
 
   useEffect(() => {
     addAnimation();
   }, []);
-
-  const [start, setStart] = useState(false);
 
   function addAnimation() {
     if (containerRef.current && scrollerRef.current) {
@@ -31,10 +30,7 @@ export const InfiniteMovingCode = ({
 
       scrollerContent.forEach((item) => {
         const duplicatedItem = item.cloneNode(true);
-        // remove if
-        if(scrollerRef.current){
-          scrollerRef.current.appendChild(duplicatedItem);
-        }
+        scrollerRef.current?.appendChild(duplicatedItem);
       });
 
       getDirection();
@@ -44,28 +40,25 @@ export const InfiniteMovingCode = ({
   }
 
   const getDirection = () => {
-    if (containerRef.current) {
-      containerRef.current.style.setProperty(
-        "--animation-direction",
-        direction === "up" ? "forwards" : "reverse"
-      );
-    }
+    containerRef.current?.style.setProperty(
+      "--animation-direction",
+      direction === "up" ? "forwards" : "reverse"
+    );
   };
 
   const getSpeed = () => {
-    if (containerRef.current) {
-      const duration =
-        speed === "fast" ? "10s" : speed === "normal" ? "30s" : "80s";
-      containerRef.current.style.setProperty("--animation-duration", duration);
-    }
+    const duration =
+      speed === "fast" ? "10s" : speed === "normal" ? "30s" : "80s";
+    containerRef.current?.style.setProperty("--animation-duration", duration);
   };
-
 
   return (
     <div
       ref={containerRef}
       className={cn(
-        "scroller relative z-20 h-[40rem] overflow-hidden [mask-image:linear-gradient(to_bottom,transparent,white_20%,white_80%,transparent)]",
+        `scroller relative z-20 h-[40rem] overflow-hidden 
+        [mask-image:linear-gradient(to_bottom,transparent,white_20%,white_80%,transparent)]
+        `,
         className
       )}
     >

@@ -70,7 +70,7 @@ const AiCard = () => {
             <FiSettings />
         </div>
       </div>
-        <div className="h-[90%] text-white bg-black rounded-md flex flex-col antialiased items-center justify-center relative overflow-hidden">
+        <div className="h-[80%] text-white bg-black rounded-md flex flex-col antialiased items-center justify-center relative overflow-hidden">
               <InfiniteMovingCode 
                 items={<CodeBlock />}
                 direction="up"

@@ -71,3 +71,31 @@
       var(--animation-direction, forwards) linear infinite;
   }
 }
+
+
+@keyframes move{
+  0%{
+    left: -40px;
+  }
+  100%{
+    left: 120px;
+  }
+}
+
+.moveAnimate {
+  animation: move 3s ease-in-out infinite;
+}
+@keyframes scroll-vertical {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-50%);
+  }
+}
+
+.animate-scroll-vertical {
+  animation: scroll-vertical var(--animation-duration, 20s)
+    var(--animation-direction, forwards) linear infinite;
+}
+
