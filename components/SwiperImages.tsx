@@ -16,7 +16,7 @@ export default function SwiperImages() {
         slidesPerView={1}
         spaceBetween={30}
         autoplay={{
-          delay: 2900,
+          delay: 2700,
           disableOnInteraction: false,
         }}
         loop={true}
