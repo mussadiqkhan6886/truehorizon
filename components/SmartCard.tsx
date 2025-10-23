@@ -20,8 +20,8 @@ const SmartCard = () => {
       </div>
       <div className='border flex-1 w-full gap-3 border-zinc-800 px-1 py-2'>
         {smartData.map((item, i) => (
-            <div key={i} className='text-[12px] mb-1 flex p-0.5 px-1 gap-1 border border-zinc-800'>
-                <div>icon</div>
+            <div key={i} className='text-[12px] items-center mb-1 flex p-0.5 px-1.5 gap-1.5 border border-zinc-800'>
+                {<item.icon />}
                 <div className='text-zinc-300 font-[500]'>{item.title}</div>
             </div>
         ))}

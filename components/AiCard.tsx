@@ -12,7 +12,7 @@ const AiCard = () => {
         <div className='bg-zinc-800 w-[100px] h-[10px] rounded-xl'>
 
         </div>
-        <div className='flex items-center gap-2 text-[9px] text-zinc-300'>
+        <div className='flex pr-1 items-center gap-2 text-[9px] text-zinc-300'>
             <FiSquare />
             <FiMinus />
             <span>X</span>

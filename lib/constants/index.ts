@@ -1,4 +1,8 @@
 import { Variants } from "framer-motion"
+import { HiOutlineDesktopComputer } from "react-icons/hi";
+import { RiFileChartLine } from "react-icons/ri";
+import { MdSpeed, MdBuild } from "react-icons/md";
+import { FiRepeat } from "react-icons/fi";
 
 export const menu = [
     {title: "Home", link: "/"},
@@ -30,10 +34,9 @@ export const processData = [
 ]
 
 export const smartData = [
-  {icon: "", title: "System check"},
-  {icon: "", title: "Process check"},
-  {icon: "", title: "Speed check"},
-  {icon: "", title: "Manual work"},
-  {icon: "", title: "Repetative task"}
-
+  {icon: HiOutlineDesktopComputer , title: "System check"},
+  {icon: RiFileChartLine , title: "Process check"},
+  {icon: MdSpeed , title: "Speed check"},
+  {icon: MdBuild , title: "Manual work"},
+  {icon: FiRepeat  , title: "Repetative task"}
 ]
