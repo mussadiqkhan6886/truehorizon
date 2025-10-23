@@ -3,6 +3,7 @@ import { HiOutlineDesktopComputer } from "react-icons/hi";
 import { RiFileChartLine } from "react-icons/ri";
 import { MdSpeed, MdBuild } from "react-icons/md";
 import { FiRepeat } from "react-icons/fi";
+import { FiMessageSquare, FiSettings, FiTrendingUp } from "react-icons/fi";
 
 export const menu = [
     {title: "Home", link: "/"},
@@ -40,3 +41,4 @@ export const smartData = [
   {icon: MdBuild , title: "Manual work"},
   {icon: FiRepeat  , title: "Repetative task"}
 ]
+
