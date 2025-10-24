@@ -28,7 +28,7 @@ const Title = ({ buttonHeading, firstLine, secondLine, para }: TitleProps) => {
           <br />
           {secondLine}
         </h2>
-        <p className="text-gray-300 w-full md:w-[600px] text-center px-4 text-[15px] sm:text-[18px]">{para}</p>
+        <p className="text-gray-300 w-full md:w-[635px] text-center px-4 text-[15px] sm:text-[18px]">{para}</p>
       </div>
     </motion.div>
   )

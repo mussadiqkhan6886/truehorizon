@@ -3,7 +3,8 @@ import { HiOutlineDesktopComputer } from "react-icons/hi";
 import { RiFileChartLine } from "react-icons/ri";
 import { MdSpeed, MdBuild } from "react-icons/md";
 import { FiRepeat } from "react-icons/fi";
-import { FiMessageSquare, FiSettings, FiTrendingUp } from "react-icons/fi";
+import { FiTrendingUp, FiCpu,
+  FiShield, } from "react-icons/fi";
 import {
   FiBarChart2,
   FiUsers,
@@ -89,3 +90,55 @@ export const aiBenefitsData = [
   },
 ];
 
+
+
+export const pricingData = [
+  {
+    title: "Starter",
+    badge: null,
+    price: "Request for pricing",
+    description: "Perfect for small businesses starting with AI automation.",
+    ctaText: "Schedule a call",
+    ctaLink: "#",
+    icon: FiCpu,
+    features: [
+      "Basic workflow automation",
+      "AI-powered personal assistant",
+      "Standard analytics & reporting",
+      "Email & chat support",
+      "Up to 3 AI integrations",
+    ],
+  },
+  {
+    title: "Professional",
+    badge: "Popular",
+    price: "Request for pricing",
+    description: "Perfect for small businesses starting with AI automation.",
+    ctaText: "Schedule a call",
+    ctaLink: "#",
+    icon: FiTrendingUp,
+    features: [
+      "Advanced workflow automation",
+      "AI-driven sales & marketing tools",
+      "Enhanced data analytics & insights",
+      "Priority customer support",
+      "Up to 10 AI integrations",
+    ],
+  },
+  {
+    title: "Enterprise",
+    badge: null,
+    price: "Custom",
+    description: "Perfect for small businesses starting with AI automation.",
+    ctaText: "Schedule a call",
+    ctaLink: "#",
+    icon: FiShield,
+    features: [
+      "Fully customizable AI automation",
+      "Dedicated AI business consultant",
+      "Enterprise-grade compliance",
+      "24/7 VIP support",
+      "Unlimited AI integrations",
+    ],
+  },
+];
