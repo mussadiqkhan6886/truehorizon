@@ -1,10 +1,13 @@
+'use client';
+
 import React from 'react'
 import Title from './Title'
-import { pricingData } from '@/lib/constants'
+import { pricingData, variants2 } from '@/lib/constants'
 import Button from './Button'
 import { FiCheck } from 'react-icons/fi'
 import Link from 'next/link'
 import { cn } from '@/lib/utils'
+import { motion } from 'framer-motion';
 
 const Pricing = () => {
   return (
@@ -12,7 +15,7 @@ const Pricing = () => {
       <Title buttonHeading='Pricing' firstLine='The Best AI Automation,' secondLine="at the Right Price" para='Choose a plan that fits your business needs and start automating with AI' />
       <div className="grid grid-cols-3 mt-16 gap-6 px-20">
         {pricingData.map((item, i) => (
-            <div key={i} className='border flex flex-col gap-9 relative overflow-hidden border-zinc-800 p-7'>
+            <motion.div variants={variants2(item.delay)} initial="hidden" whileInView={"show"} key={i} className='border flex flex-col gap-9 relative overflow-hidden border-zinc-800 p-7'>
               {item.title === "Professional" && (<div className="absolute -top-[10px] left-0 right-0 bottom-[280px] opacity-75  bg-[radial-gradient(circle_at_bottom,_#6A1B9A_0%,_transparent_70%)] blur-xl rotate-180" />)}
                 <div className='z-10 flex gap-3 flex-col'>
                   <div className='flex justify-between'>
@@ -53,7 +56,7 @@ const Pricing = () => {
                   </ul>
                 </div>
                 {item.title !== "Professional" && (<div className="absolute -bottom-10 opacity-65 inset-0 bg-[radial-gradient(circle_at_bottom,_#6A1B9A_0%,_transparent_40%)] blur-2xl" />)}
-            </div>
+            </motion.div>
         ))}
       </div>
     </section>

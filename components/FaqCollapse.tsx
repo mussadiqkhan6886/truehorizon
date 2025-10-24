@@ -1,13 +1,14 @@
 "use client";
 import React, { useState } from "react";
 import { FiChevronDown } from "react-icons/fi";
-import { faqs } from "@/lib/constants";
+import { faqs, variants2 } from "@/lib/constants";
+import {motion} from "framer-motion";
 
 const FaqCollapse = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <div className="relative max-w-3xl mx-auto py-10 space-y-3">
+    <motion.div variants={variants2(0.2)} initial="hidden" whileInView={"show"} className="relative max-w-3xl mx-auto py-10 space-y-3">
       {faqs.map((faq, i) => {
         const isOpen = openIndex === i;
 
@@ -48,7 +49,7 @@ const FaqCollapse = () => {
           </div>
         );
       })}
-    </div>
+    </motion.div>
   );
 };
 

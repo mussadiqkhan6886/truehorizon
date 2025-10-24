@@ -31,10 +31,25 @@ export const variants = {
       y: 0,
       transition: {
         duration: 0.5, // 0.5s animation speed
-        delay: 0.2
+        delay: 0.1
       }
     }
   } as Variants
+
+export const variants2 = (delay: number): Variants => ({
+  hidden: {
+    opacity: 0,
+    y: 100,
+  },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.5,
+      delay: delay,
+    },
+  },
+});
 
 export const processData = [
   {id: 1, title: "Smart Analyzing", detail: "We audit your workflows, uncover inefficiencies, and pinpoint high-ROI opportunities for AI automation."},
@@ -58,36 +73,42 @@ export const aiBenefitsData = [
     detail:
       "Gain actionable insights with AI-driven analytics to improve decision-making and strategy.",
     icon: FiBarChart2,
+    delay: 0.1
   },
   {
     title: "Better Customer Experience",
     detail:
       "Personalized AI interactions improve response times, customer engagement, and overall satisfaction.",
     icon: FiUsers,
+    delay: 0.2
   },
   {
     title: "24/7 Availability",
     detail:
       "AI-powered systems operate around the clock, ensuring seamless support and execution without downtime.",
     icon: FiClock,
+    delay: 0.3
   },
   {
     title: "Cost Reduction",
     detail:
       "AI automation minimizes manual work, cuts operational costs, and optimizes resource allocation for better profitability.",
     icon: FiDollarSign,
+    delay: 0.4
   },
   {
     title: "Data-Driven Insights",
     detail:
       "Leverage AI to analyze vast data sets, identify trends, and make smarter, faster, and more accurate business decisions.",
     icon: FiTrendingUp,
+    delay: 0.5
   },
   {
     title: "Scalability & Growth",
     detail:
       "AI adapts to your business needs, allowing you to scale efficiently without increasing workload or costs.",
     icon: FiLayers,
+    delay: 0.6
   },
 ];
 
@@ -101,6 +122,7 @@ export const pricingData = [
     description: "Perfect for small businesses starting with AI automation.",
     ctaText: "Schedule a call",
     icon: FaRocket,
+    delay: 0.1,
     features: [
       "Basic workflow automation",
       "AI-powered personal assistant",
@@ -116,6 +138,7 @@ export const pricingData = [
     description: "Perfect for small businesses starting with AI automation.",
     ctaText: "Schedule a call",
     icon: FiZap,
+    delay: 0.2,
     features: [
       "Advanced workflow automation",
       "AI-driven sales & marketing tools",
@@ -131,6 +154,7 @@ export const pricingData = [
     description: "Perfect for small businesses starting with AI automation.",
     ctaText: "Schedule a call",
     icon: FaCrown,
+    delay: 0.3,
     features: [
       "Fully customizable AI automation",
       "Dedicated AI business consultant",

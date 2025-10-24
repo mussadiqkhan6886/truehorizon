@@ -1,12 +1,16 @@
+'use client';
+
 import React from 'react'
 import Title from './Title'
 import Image from 'next/image'
+import {motion} from "framer-motion"
+import { variants2 } from '@/lib/constants';
 
 const Study = () => {
   return (
     <section className='py-10 mb-10 text-white'>
       <Title buttonHeading='Case Studies' firstLine='Case Study — The' secondLine="Village of Robbins" para='Smart Government Systems for a Smarter Community' />
-      <div className='flex mt-10 gap-12 max-w-[940px]  mx-auto'>
+      <motion.div variants={variants2(0.2)} initial="hidden" whileInView={"show"} className='flex mt-10 gap-12 max-w-[940px]  mx-auto'>
         <div className='flex-1 w-[50%] overflow-hidden relative'>
             <Image src={"/studyImage.png"} className='w-full h-full object-center object-cover scale-110' width={500} height={500} alt='image study' />
             <div className='absolute -left-10 w-[100px] z-10 top-0 h-full bg-gradient-to-r from-black to-black/10' />
@@ -29,7 +33,7 @@ const Study = () => {
                 </div>
             </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   )
 }
