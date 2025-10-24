@@ -2,6 +2,7 @@ import Benefits from "@/components/Benefits";
 import Hero from "@/components/Hero";
 import Pricing from "@/components/Pricing";
 import Process from "@/components/Process";
+import Reviews from "@/components/Reviews";
 import Services from "@/components/Services";
 import Study from "@/components/Study";
 
@@ -14,6 +15,7 @@ export default function Home() {
       <Study />
       <Benefits />
       <Pricing />
+      <Reviews />
     </main>
   );
 }

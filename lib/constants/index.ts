@@ -140,3 +140,38 @@ export const pricingData = [
     ],
   },
 ];
+
+export const testimonials = [
+  {
+    quote:
+      "AI automation transformed our operations by eliminating repetitive tasks and improving efficiency. Scaling our workflow has never been easier!",
+    name: "James Carter",
+    title: "CEO at TechFlow Solutions",
+    rating: 5,
+    image: ""
+  },
+  {
+    quote:
+      "With AI, we cut manual work and improved accuracy. Our team now focuses on high-impact tasks while automation handles the rest!",
+    name: "Sophia Martinez",
+    title: "Operations Manager at NexaCorp",
+    rating: 4,
+    image: ""
+  },
+  {
+    quote:
+      "AI-driven insights doubled our sales efficiency. We now engage leads at the right time with smarter, data-backed decisions!",
+    name: "David Reynolds",
+    title: "Head of Sales at GrowthPeak",
+    rating: 5,
+    image: ""
+  },
+  {
+    quote:
+      "Customer support is now seamless. Our response time improved drastically, and satisfaction levels are at an all-time high, thanks to xtract.",
+    name: "Emily Wong",
+    title: "Customer Success Lead at SupportHive",
+    rating: 5,
+    image: ""
+  },
+];

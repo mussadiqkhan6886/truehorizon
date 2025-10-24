@@ -10,7 +10,7 @@ const Pricing = () => {
   return (
    <section className='py-10 text-white'>
       <Title buttonHeading='Pricing' firstLine='The Best AI Automation,' secondLine="at the Right Price" para='Choose a plan that fits your business needs and start automating with AI' />
-      <div className="grid grid-cols-3 gap-6 px-20">
+      <div className="grid grid-cols-3 mt-16 gap-6 px-20">
         {pricingData.map((item, i) => (
             <div key={i} className='border flex flex-col gap-9 relative overflow-hidden border-zinc-800 p-7'>
               {item.title === "Professional" && (<div className="absolute -top-[10px] left-0 right-0 bottom-[280px] opacity-75  bg-[radial-gradient(circle_at_bottom,_#6A1B9A_0%,_transparent_70%)] blur-xl rotate-180" />)}
