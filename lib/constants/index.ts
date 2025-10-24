@@ -2,7 +2,7 @@ import { Variants } from "framer-motion"
 import { HiOutlineDesktopComputer } from "react-icons/hi";
 import { RiFileChartLine } from "react-icons/ri";
 import { MdSpeed, MdBuild } from "react-icons/md";
-import { FiRepeat } from "react-icons/fi";
+import { FiBriefcase, FiRepeat, FiZap } from "react-icons/fi";
 import { FiTrendingUp, FiCpu,
   FiShield, } from "react-icons/fi";
 import {
@@ -12,6 +12,7 @@ import {
   FiDollarSign,
   FiLayers,
 } from "react-icons/fi";
+import {FaCrown, FaRocket} from "react-icons/fa6"
 
 export const menu = [
     {title: "Home", link: "/"},
@@ -99,8 +100,7 @@ export const pricingData = [
     price: "Request for pricing",
     description: "Perfect for small businesses starting with AI automation.",
     ctaText: "Schedule a call",
-    ctaLink: "#",
-    icon: FiCpu,
+    icon: FaRocket,
     features: [
       "Basic workflow automation",
       "AI-powered personal assistant",
@@ -115,8 +115,7 @@ export const pricingData = [
     price: "Request for pricing",
     description: "Perfect for small businesses starting with AI automation.",
     ctaText: "Schedule a call",
-    ctaLink: "#",
-    icon: FiTrendingUp,
+    icon: FiZap,
     features: [
       "Advanced workflow automation",
       "AI-driven sales & marketing tools",
@@ -131,8 +130,7 @@ export const pricingData = [
     price: "Custom",
     description: "Perfect for small businesses starting with AI automation.",
     ctaText: "Schedule a call",
-    ctaLink: "#",
-    icon: FiShield,
+    icon: FaCrown,
     features: [
       "Fully customizable AI automation",
       "Dedicated AI business consultant",
