@@ -207,3 +207,36 @@ export const faqs = [
       "We offer comprehensive support, including onboarding assistance, troubleshooting, and ongoing updates. Our team is available to help with any questions or technical issues you may have.",
   },
 ];
+
+
+export const footerLinks = [
+  {
+    title: "Links",
+    items: [
+      { name: "Services", link: "/services" },
+      { name: "Process", link: "/process" },
+      { name: "Case studies", link: "/case-studies" },
+      { name: "Benefits", link: "/benefits" },
+      { name: "Pricing", link: "/pricing" },
+    ],
+  },
+  {
+    title: "Pages",
+    items: [
+      { name: "Home", link: "/" },
+      { name: "About", link: "/about" },
+      { name: "Blog", link: "/blog" },
+      { name: "Contact", link: "/contact" },
+      { name: "404", link: "/404" },
+    ],
+  },
+  {
+    title: "Socials",
+    items: [
+      { name: "Instagram", link: "https://instagram.com" },
+      { name: "Facebook", link: "https://facebook.com" },
+      { name: "Linkedin", link: "https://linkedin.com" },
+      { name: "Twitter", link: "https://twitter.com" },
+    ],
+  },
+];
