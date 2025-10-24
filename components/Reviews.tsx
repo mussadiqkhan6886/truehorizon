@@ -26,14 +26,14 @@ const Reviews = () => {
                 <p className="z-10 text-zinc-300">&quot; {review.quote} &quot;</p>
                 <div className="z-10 flex gap-3">
                     <div className='z-10'>
-                        <Image src={"/9896174.jpg"} className='w-full h-full object-cover object-center' alt='image review' width={60} height={60} />
+                        {review.image ? <Image src={review.image} alt='image' className='w-full h-full object-cover object-center rounded-full' width={40} height={40} /> : <Image src={"/9896174.jpg"} className='w-full h-full object-cover object-center rounded-full' alt='image review' width={40} height={40} />}
                     </div>
                     <div>
                         <p>{review.name}</p>
-                        <p className='text-sm text-zinc-300'>{review.title}</p>
+                        <p className='text-[11px] mt-1 text-zinc-300'>{review.title}</p>
                     </div>
                 </div>
-                <div className="absolute inset-0 -right-[200px] -bottom-[20px] opacity-75  bg-[radial-gradient(circle_at_bottom,_#6A1B9A_0%,_transparent_50%)] blur-2xl" />
+                <div className="absolute inset-0 -right-[380px] -bottom-[20px] opacity-50  bg-[radial-gradient(circle_at_bottom,_#6A1B9A_0%,_transparent_50%)] backdrop-blur-2xl" />
             </div>
         ))}
       </div>
