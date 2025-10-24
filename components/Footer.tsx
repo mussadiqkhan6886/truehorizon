@@ -6,9 +6,9 @@ const Footer = () => {
   return (
     <footer className='bg-black border-t relative overflow-hidden  text-white border-zinc-800'>
         <div className="absolute -top-[10px] -left-[10px] right-0 bottom-[280px] opacity-40 rounded-full  bg-[radial-gradient(circle_at_bottom,_#6A1B9A_0%,_transparent_60%)] h-[140px] blur-2xl rotate-180" />
-      <div className='flex w-full z-10 justify-between p-16 gap-10 '>
+      <div className='flex w-full z-10 justify-between p-[70px] gap-10 '>
         <div className='w-[300px]'>
-            <h6 className='mb-3'>True Horizon</h6>
+            <h6 className='mb-3 text-3xl font-bold'>True Horizon</h6>
             <p className='text-zinc-300 font-semibold mb-3'>We ship production systems—fast. Automations and agents tailored to your stack, measured against real KPIs.</p>
             <p className='mb-2 font-semibold text-lg'>Join our newsletter</p>
             <div className='border border-zinc-800 py-0.5 px-0.5 flex items-center rounded-md'>
@@ -29,7 +29,7 @@ const Footer = () => {
             ))}
         </div>
       </div>
-      <div className='border border-zinc-800 justify-between flex px-6 text-sm py-5'>
+      <div className='border border-zinc-800 justify-between flex px-8 text-sm py-5'>
         <p className='text-zinc-300'>True Horizon</p>
         <p>Start small, build systems for scale</p>
         <p className='text-zinc-300'>&copy; True Horizon</p>
