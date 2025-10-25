@@ -2,9 +2,7 @@ import { Variants } from "framer-motion"
 import { HiOutlineDesktopComputer } from "react-icons/hi";
 import { RiFileChartLine } from "react-icons/ri";
 import { MdSpeed, MdBuild } from "react-icons/md";
-import { FiBriefcase, FiRepeat, FiZap } from "react-icons/fi";
-import { FiTrendingUp, FiCpu,
-  FiShield, } from "react-icons/fi";
+import { FiTrendingUp, FiRepeat, FiZap, FiCheck } from "react-icons/fi";
 import {
   FiBarChart2,
   FiUsers,
@@ -12,7 +10,8 @@ import {
   FiDollarSign,
   FiLayers,
 } from "react-icons/fi";
-import {FaCrown, FaRocket} from "react-icons/fa6"
+import {FaCrown, FaHandshakeSimple, FaLightbulb, FaRocket, FaUsers} from "react-icons/fa6"
+import {FaTimes} from "react-icons/fa"
 
 export const menu = [
     {title: "Home", link: "/"},
@@ -263,3 +262,22 @@ export const footerLinks = [
     ],
   },
 ];
+
+export const about = [
+  {icon: FiBarChart2, delay: 0.2, title: "50+ Businesses", para: "Companies have streamlined their workflows with True Horizon AI solutions"},
+  {icon: FiClock, delay: 0.3, title: "1M+ Hours", para: "Reducing manual work and boosting productivity through automation"},
+  {icon: FiZap, delay: 0.4, title: "95% Faster", para: "Clients see improved efficiency within the first three months of usage"},
+]
+
+export const valuesAbout = [
+  {icon: FaLightbulb, delay: 0.2, title: "Driving Innovation Forward", para: "We embrace cutting-edge AI to create smarter, more efficient automation solutions."},
+  {icon: FaHandshakeSimple, delay: 0.3, title: "Committed to Integrity & Trust", para: "Trust and transparency are at the core of everything we do for our clients."},
+  {icon: FaRocket, delay: 0.4, title: "Empowering Business Growth", para: "We help businesses scale faster with AI-driven efficiency, reducing manual tasks and unlocking new opportunities."},
+  {icon: FaUsers, delay: 0.5, title: "Putting Customers First", para: "Your success is our priority we build solutions that truly make an impact."},
+]
+
+export const whyUs = [
+  {heading: "Manual Work", icon: FaTimes, list: ["Prone to Human Errors", "Limited by Work Hours", "High Labor Costs & Overhead", "Slow & Time-Consuming Tasks", "Disconnected & Repetitive Work", "Inconsistent & Dependent on Workforce"]},
+  {heading: "Our True Horizon", icon: FiCheck, list: ["Prone to Human Errors", "Limited by Work Hours", "High Labor Costs & Overhead", "Slow & Time-Consuming Tasks", "Disconnected & Repetitive Work", "Inconsistent & Dependent on Workforce"]}
+  
+]

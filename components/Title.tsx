@@ -7,7 +7,7 @@ import { variants } from '@/lib/constants';
 interface TitleProps {
   buttonHeading: string
   firstLine: string
-  secondLine: string
+  secondLine?: string
   para: string
 }
 
