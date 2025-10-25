@@ -1,4 +1,5 @@
 import Benefits from "@/components/Benefits";
+import Effective from "@/components/Effective";
 import FAQ from "@/components/FAQ";
 import Hero from "@/components/Hero";
 import Pricing from "@/components/Pricing";
@@ -15,6 +16,7 @@ export default function Home() {
       <Process />
       <Study />
       <Benefits />
+      <Effective />
       <Pricing />
       <Reviews />
       <FAQ />

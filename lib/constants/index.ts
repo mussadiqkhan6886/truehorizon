@@ -281,3 +281,13 @@ export const whyUs = [
   {heading: "Our True Horizon", icon: FiCheck, list: ["Prone to Human Errors", "Limited by Work Hours", "High Labor Costs & Overhead", "Slow & Time-Consuming Tasks", "Disconnected & Repetitive Work", "Inconsistent & Dependent on Workforce"]}
   
 ]
+
+
+export const automations = [
+  {icon: "P", heading: "Gmail Outreach Bot", para: "Automate Your Cold Outreach sending out 50-1000 emails/day"},
+  {icon: "P", heading: "Gmail Outreach Bot", para: "Automate Your Cold Outreach sending out 50-1000 emails/day"},
+  {icon: "P", heading: "Gmail Outreach Bot", para: "Automate Your Cold Outreach sending out 50-1000 emails/day"},
+  {icon: "P", heading: "Gmail Outreach Bot", para: "Automate Your Cold Outreach sending out 50-1000 emails/day"},
+  {icon: "P", heading: "Gmail Outreach Bot", para: "Automate Your Cold Outreach sending out 50-1000 emails/day"},
+  {icon: "P", heading: "Gmail Outreach Bot", para: "Automate Your Cold Outreach sending out 50-1000 emails/day"},
+]
