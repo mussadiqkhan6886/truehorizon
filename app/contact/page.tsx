@@ -16,7 +16,7 @@ const Contact = () => {
               <TextGenerateEffect className='text-base leading-snug tracking-wide text-center font-normal text-gray-300' duration={1.5} filter={true} words={para} />
           </div>
         </div>
-        <div className='flex min-h-screen flex-col gap-4'>
+        <div className='flex min-h-screen flex-col gap-4 px-2 sm:px-0'>
           <div className='border relative overflow-hidden border-zinc-800 rounded-lg p-6 min-w-[310px]'>
             <div className='absolute -bottom-[60px] w-[100px] h-[50px] -right-[20px] bg-purple-800 blur-3xl' />
             <div className='flex gap-2 mb-2'>
