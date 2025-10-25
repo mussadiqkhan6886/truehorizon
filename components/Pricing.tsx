@@ -11,22 +11,22 @@ import { motion } from 'framer-motion';
 
 const Pricing = () => {
   return (
-   <section className='py-10 text-white'>
+   <section className='max-w-7xl mx-auto py-10 text-white'>
       <Title buttonHeading='Pricing' firstLine='The Best AI Automation,' secondLine="at the Right Price" para='Choose a plan that fits your business needs and start automating with AI' />
-      <div className="grid grid-cols-3 mt-16 gap-6 px-20">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 mt-16 gap-6 md:px-10 sm:px-20">
         {pricingData.map((item, i) => (
             <motion.div variants={variants2(item.delay)} initial="hidden" whileInView={"show"} key={i} className='border flex flex-col gap-9 relative overflow-hidden border-zinc-800 p-7'>
               {item.title === "Professional" && (<div className="absolute -top-[10px] left-0 right-0 bottom-[280px] opacity-75  bg-[radial-gradient(circle_at_bottom,_#6A1B9A_0%,_transparent_70%)] blur-xl rotate-180" />)}
                 <div className='z-10 flex gap-3 flex-col'>
                   <div className='flex justify-between'>
                     <div className='flex gap-3 items-center'>
-                      <item.icon className='text-xl' /> <p className='text-2xl tracking-tight'>{item.title}</p>
+                      <item.icon className='text-[18px] xl:text-xl' /> <p className='text-2xl tracking-tight'>{item.title}</p>
                     </div>
                     {item.badge && <div className='z-10 border border-zinc-800 bg-black px-2.5 py-1 text-sm'>
                       {item.badge}  
                     </div>}
                   </div>
-                  <h5 className='text-[34px] font-semibold tracking-tight text-zinc-300'>{item.price}</h5>
+                  <h5 className='text-[28px] xl:text-[34px] font-semibold tracking-tight text-zinc-300'>{item.price}</h5>
                   <p className='text-zinc-300'>{item.description}</p>
                 </div>
                 <div

@@ -8,7 +8,7 @@ import { variants } from '@/lib/constants';
 const WorkFlow = () => {
 
   return (
-    <div className='w-[450px] relative h-[370px] rounded-3xl bg-[#0d0d0dcc] p-[50px] pb-0'>
+    <div className='w-full md:w-[450px] relative h-[370px] rounded-3xl bg-[#0d0d0dcc] p-[50px] pb-0'>
         <motion.div variants={variants} initial="hidden" whileInView={"show"} viewport={{once: true, amount: 0.2}} className='bg-black rounded-2xl border-b-0 p-4 border-zinc-900 h-full border'>
         <div className='border-zinc-800 rounded-sm p-1 text-[12px] bg-gray-400/10 border mb-2 flex gap-3'>
             <div className='bg-gray-700/60 px-0.5'>All Tasks</div>

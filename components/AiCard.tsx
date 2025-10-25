@@ -4,7 +4,7 @@ import { InfiniteMovingCode } from './ui/Code'
 
 const CodeBlock = () => {
   return (
-    <div className="bg-black text-gray-200  text-[11px] p-4 px-1 leading-4 w-full">
+    <div className=" text-gray-200 text-[8px] sm:text-[11px] md:p-4 md:px-1 leading-4 w-full">
       <pre className="whitespace-pre">
         <code>
           <span className="text-purple-500">class</span> AutomationTrigger:
@@ -49,7 +49,7 @@ const CodeBlock = () => {
 const AiCard = () => {
   return (
     <div className='relative h-[159px] border border-gray-800'>
-      <div className='bg-zinc-900 w-full flex justify-between items-center px-1 h-[26px]'>
+      <div className='bg-zinc-900 w-full flex justify-between items-center sm:px-1 h-[26px]'>
         <div className='flex text-[9px] gap-2'>
             <FiArrowLeft />
             <FiArrowRight />
@@ -70,7 +70,7 @@ const AiCard = () => {
             <FiSettings />
         </div>
       </div>
-        <div className="h-[80%] text-white bg-black rounded-md flex flex-col antialiased items-center justify-center relative overflow-hidden">
+        <div className="h-[87%] md:h-[80%] text-white  rounded-md flex flex-col antialiased items-end pl-8 md:pl-0 justify-end md:items-center md:justify-center relative overflow-hidden">
               <InfiniteMovingCode 
                 items={<CodeBlock />}
                 direction="up"

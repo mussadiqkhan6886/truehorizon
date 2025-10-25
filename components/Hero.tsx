@@ -9,7 +9,7 @@ const Hero = () => {
     const Heading = `True Horizon That Builds, Not Just Advises.`;
     const para = `We don’t hand you a strategy deck. We implement real AI systems—agents, automations, and dashboards that move the needle.`
   return (
-    <section className='min-h-screen' style={{ width: '100%', height: '600px', position: 'relative' }}>
+    <section className='min-h-screen pt-4 sm:pt-0' style={{ width: '100%', height: '600px', position: 'relative' }}>
         <Orb
             hoverIntensity={0.13}
             rotateOnHover={true}
@@ -29,7 +29,7 @@ const Hero = () => {
         />
         </div> */}
         
-        <div className='z-50 px-[35px] md:px-[70px] lg:px-[160px] flex flex-col text-white items-center justify-center min-h-screen'>
+        <div className='z-20 sm:px-[35px] md:px-[70px] lg:px-[160px] flex flex-col text-white items-center justify-center min-h-screen'>
             <div className='flex items-center justify-center gap-3 font-[500] p-0.5 rounded-2xl bg-black z-10'>
                 <div className='bg-purple-700 rounded-xl px-2'>New</div>
                 <div className='pr-2 text-sm overflow-hidden whitespace-nowrap animate-[show_5s_ease-out_forwards]'>Automated Voice Agent X Dashboard</div>

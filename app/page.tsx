@@ -9,7 +9,7 @@ import Study from "@/components/Study";
 
 export default function Home() {
   return (
-    <main className="pt-4 md:pt-12 bg-black">
+    <main className="pt-4 overflow-x-hidden  md:pt-12 bg-black">
       <Hero />
       <Services />
       <Process />

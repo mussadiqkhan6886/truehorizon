@@ -3,8 +3,8 @@ import React from 'react'
 
 const SmartCard = () => {
   return (
-    <div className='flex gap-2'>
-      <div className='border border-zinc-800 px-2 w-[180px] flex justify-center items-center flex-col gap-4 h-[160px]'>
+    <div className='flex flex-col sm:flex-row items-center justify-center gap-2'>
+      <div className='border border-zinc-800 sm:px-2 w-[180px] flex justify-center items-center flex-col gap-4 h-[160px]'>
         <div className="relative border [animation:spin_3s_linear_infinite] border-zinc-800 rounded-full flex items-center justify-center  w-25 h-25 overflow-hidden">
             <div className="absolute w-2/3 h-2/3 rounded-full border border-zinc-800/20" />
             <div className="absolute w-1/3 h-1/3 rounded-full border border-zinc-800/20" />

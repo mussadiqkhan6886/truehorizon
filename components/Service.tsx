@@ -14,14 +14,14 @@ interface Props {
 const Service = ({left, title, para, header, points}: Props) => {
 
     const details = (
-    <div className="flex flex-col items-start gap-4 max-w-lg">
+    <div className="flex max-w-[300px] flex-col items-start gap-4 w-full md:max-w-xl">
       <div className="text-sm font-[500] border border-gray-700 px-2.5 py-1.5 mb-2 rounded-md">{header}</div>
       <div>
-        <h3 className="text-4xl font-semibold mb-2">{title}</h3>
-        <p className="text-gray-200 mb-4">{para}</p>
+        <h3 className="text-2xl md:text-4xl font-semibold mb-2">{title}</h3>
+        <p className="text-gray-200 text-[12px] md:text-base mb-4">{para}</p>
         <ul className="flex gap-4">
           {points.map((item, i) => (
-            <li key={i} className="text-sm font-[500] border border-gray-700 px-2.5 py-1.5 mb-2 rounded-md">
+            <li key={i} className="text-[11px] sm:text-sm font-[500] border border-gray-700 px-2.5 py-1.5 mb-2 rounded-md">
               {item}
             </li>
           ))}
@@ -45,10 +45,10 @@ const Service = ({left, title, para, header, points}: Props) => {
     }
 
   return (
-    <section className="flex flex-col md:flex-row items-center justify-between gap-24 mb-20 max-w-[1020px]">
+    <section className="flex flex-col lg:flex-row items-center justify-between gap-24 mb-20 max-w-[1020px]">
       {left ? (
         <>
-          <div className='pr-10'>{details}</div>
+          <div className='px-4 md:pr-10'>{details}</div>
           <div>{imageSection}</div>
         </>
       ) : (
@@ -56,7 +56,7 @@ const Service = ({left, title, para, header, points}: Props) => {
         <div>
           {imageSection}
         </div>
-        <div className='pr-10'>
+        <div className='px-4 md:pr-10'>
           {details}
         </div>
         </>
