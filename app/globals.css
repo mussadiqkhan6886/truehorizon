@@ -99,3 +99,7 @@
     var(--animation-direction, forwards) linear infinite;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+

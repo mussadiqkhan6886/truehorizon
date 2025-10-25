@@ -8,7 +8,7 @@ import { variants2 } from '@/lib/constants';
 
 const Study = () => {
   return (
-    <section className='py-10 mb-10 text-white'>
+    <section id='case-studies' className='py-10 mb-10 text-white'>
       <Title buttonHeading='Case Studies' firstLine='Case Study — The' secondLine="Village of Robbins" para='Smart Government Systems for a Smarter Community' />
       <motion.div variants={variants2(0.2)} initial="hidden" whileInView={"show"} className='flex flex-col items-center md:flex-row mt-10 gap-12 max-w-[940px]  mx-auto'>
         <div className='flex-1 w-full md:w-[50%] overflow-hidden relative'>

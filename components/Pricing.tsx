@@ -11,7 +11,7 @@ import { motion } from 'framer-motion';
 
 const Pricing = () => {
   return (
-   <section className='max-w-7xl mx-auto py-10 text-white'>
+   <section id='pricing' className='max-w-7xl mx-auto py-10 text-white'>
       <Title buttonHeading='Pricing' firstLine='The Best AI Automation,' secondLine="at the Right Price" para='Choose a plan that fits your business needs and start automating with AI' />
       <div className="grid md:grid-cols-2 lg:grid-cols-3 mt-16 gap-6 md:px-10 sm:px-20">
         {pricingData.map((item, i) => (
