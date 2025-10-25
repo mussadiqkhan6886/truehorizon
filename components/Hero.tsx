@@ -7,7 +7,7 @@ import Galaxy from './Stars';
 
 const Hero = () => {
     const Heading = `True Horizon That Builds, Not Just Advises.`;
-    const para = `We don’t hand you a strategy deck. We implement real AI systems—agents, automations, and dashboards that move the needle.`
+    const para = `We don't hand you a strategy deck. We implement real AI systems—agents, automations, and dashboards that move the needle.`
   return (
     <section className='min-h-screen pt-4 sm:pt-0' style={{ width: '100%', height: '600px', position: 'relative' }}>
         <Orb
