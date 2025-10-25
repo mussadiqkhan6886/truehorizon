@@ -6,7 +6,7 @@ import { motion } from 'framer-motion'
 
 const Who = () => {
   return (
-    <section className='my-10 max-w-[970px] mx-auto'>
+    <section className='my-10 px-3 max-w-[970px] mx-auto'>
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
         {about.map((item, i) => (
             <motion.div variants={variants2(item.delay)} initial="hidden" whileInView={"show"} key={i} className='border border-zinc-800 px-8 py-5 rounded-lg relative overflow-hidden'>
