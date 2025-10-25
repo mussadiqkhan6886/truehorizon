@@ -17,6 +17,7 @@ const Contact = () => {
           </div>
         </div>
         <div className='flex min-h-screen flex-col gap-4 px-2 sm:px-0'>
+          <div className='flex flex-col gap-2 lg:flex-row'>
           <div className='border relative overflow-hidden border-zinc-800 rounded-lg p-6 min-w-[310px]'>
             <div className='absolute -bottom-[60px] w-[100px] h-[50px] -right-[20px] bg-purple-800 blur-3xl' />
             <div className='flex gap-2 mb-2'>
@@ -32,6 +33,7 @@ const Contact = () => {
               <p>Phone</p>
             </div>
             <p>signup below</p>
+          </div>
           </div>
           <form className='p-3 rounded-lg mb-6 border gap-2 border-zinc-800 grid grid-cols-2'>
             <div className="flex flex-col gap-2">
