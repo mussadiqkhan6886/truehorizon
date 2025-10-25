@@ -26,7 +26,7 @@ const Reviews = () => {
         {testimonials.map((review, i) => (
             <div  key={i} className='border relative flex flex-col gap-5 border-zinc-800 rounded-md p-6 overflow-hidden'>
                 <div className='flex text-xl'>{makeStars(review.rating)}</div>
-                <p className="z-10 text-zinc-300">&quot; {review.quote} &quot;</p>
+                <p className="z-10 text-sm sm:text-base text-zinc-300">&quot; {review.quote} &quot;</p>
                 <div className="z-10 flex gap-3">
                     <div className='z-10'>
                         {review.image ? <Image src={review.image} alt='image' className='w-full h-full object-cover object-center rounded-full' width={40} height={40} /> : <Image src={"/9896174.jpg"} className='w-full h-full object-cover object-center rounded-full' alt='image review' width={40} height={40} />}

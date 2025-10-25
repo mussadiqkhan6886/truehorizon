@@ -29,7 +29,7 @@ const Footer = () => {
             ))}
         </div>
       </div>
-      <div className='border border-zinc-800 justify-between flex px-1 sm:px-8 text-[12px] md:text-sm py-5'>
+      <div className='border flex-col md:flex-row border-zinc-800 justify-center items-center gap-1 md:justify-between flex px-1 sm:px-8 text-[12px] md:text-sm py-5'>
         <p className='text-zinc-300'>True Horizon</p>
         <p>Start small, build systems for scale</p>
         <p className='text-zinc-300'>&copy; True Horizon</p>

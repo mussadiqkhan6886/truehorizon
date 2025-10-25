@@ -51,7 +51,7 @@ const Pricing = () => {
                   <p className='text-zinc-300 mb-2'>What&apos;s Included: </p>
                   <ul className='flex flex-col gap-2'>
                     {item.features.map((feature, j) => (
-                      <li className='flex items-center gap-2 text-[17px] tracking-tight' key={j}><FiCheck className='text-xl' /> {feature}</li>
+                      <li className='flex items-center gap-2 text-[15px] sm:text-[17px] tracking-tight' key={j}><FiCheck className='text-xl' /> {feature}</li>
                     ))}
                   </ul>
                 </div>

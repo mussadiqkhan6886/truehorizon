@@ -24,11 +24,11 @@ const Title = ({ buttonHeading, firstLine, secondLine, para }: TitleProps) => {
     >
       <div className="text-sm font-semibold border border-gray-700 px-2.5 py-1.5 mb-2 rounded-md">{buttonHeading}</div>
       <div className='md:px-24 flex items-center gap-3 md:gap-5 flex-col'>
-        <h2 className="text-[22px] sm:text-[27px] md:text-[50px]  md:leading-14 text-center font-semibold">{firstLine}
+        <h2 className="text-[26px] sm:text-[27px] md:text-[50px]  md:leading-14 text-center font-semibold">{firstLine}
           <br />
           {secondLine}
         </h2>
-        <p className="text-gray-300 w-full md:w-[635px] text-center px-4 text-[15px] sm:text-[18px]">{para}</p>
+        <p className="text-gray-300 w-full md:w-[635px] text-center px-4 text-[13px] sm:text-[18px]">{para}</p>
       </div>
     </motion.div>
   )
