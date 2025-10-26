@@ -19,9 +19,18 @@ const ContactSection = () => {
         service: "",
     })
 
-    const handleChange = (e: HTMLInputElement | HTMLTextAreaElement) => {
-        // setData(prev => ({[...prev, {e.target.name: e.target.value}]}))
-    }
+    const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+    setData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    console.log("Form Data:", data);
+    // You can later send it to backend or API endpoint
+  };
 
   return (
     <div className='flex min-h-screen flex-col gap-4 px-2 sm:px-0'>
@@ -43,7 +52,7 @@ const ContactSection = () => {
         <p>signup below</p>
         </div>
         </div>
-        <form className='p-3 rounded-lg mb-6 border gap-2 border-zinc-800 grid grid-cols-2'>
+        <form onSubmit={handleSubmit} className='p-3 rounded-lg mb-6 border gap-2 border-zinc-800 grid grid-cols-2'>
         <div className="flex flex-col gap-2">
             <label className='text-sm mt-1' htmlFor="firstName">First Name</label>
             <input value={data.firstName} onChange={handleChange} name='firstName' type="text" id='firstName' placeholder='Arman' className='outline-none border border-zinc-800 p-2 text-zinc-200' />
