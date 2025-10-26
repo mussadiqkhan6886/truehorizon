@@ -1,6 +1,7 @@
 "use client";
 
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
 export const InfiniteMovingCode = ({
@@ -9,12 +10,14 @@ export const InfiniteMovingCode = ({
   speed = "fast",
   pauseOnHover,
   className,
+  images
 }: {
   items?: React.ReactNode;
-  direction?: "up" | "down";
+  direction?: "up" | "down" | "left";
   speed?: "fast" | "normal" | "slow";
   pauseOnHover?: boolean;
   className?: string;
+  images?: string[]
 }) => {
   const containerRef = React.useRef<HTMLDivElement>(null);
   const scrollerRef = React.useRef<HTMLUListElement>(null);
@@ -42,7 +45,7 @@ export const InfiniteMovingCode = ({
   const getDirection = () => {
     containerRef.current?.style.setProperty(
       "--animation-direction",
-      direction === "up" ? "forwards" : "reverse"
+      direction === "up" ? "forwards" : direction === "left" ? "vertical" : "reverse"
     );
   };
 
@@ -70,7 +73,11 @@ export const InfiniteMovingCode = ({
           pauseOnHover && "hover:[animation-play-state:paused]"
         )}
       >
-        {items}
+        {images ? 
+          images.map((item, i) => (
+            <Image key={i} src={item} alt="image" width={70} height={70} />
+          ))
+        : items}
       </ul>
     </div>
   );

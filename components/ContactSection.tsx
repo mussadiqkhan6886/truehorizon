@@ -20,7 +20,7 @@ const ContactSection = () => {
     })
 
     const handleChange = (e: HTMLInputElement | HTMLTextAreaElement) => {
-        setData(prev => ({[...prev, {e.target.name: e.target.value}]}))
+        // setData(prev => ({[...prev, {e.target.name: e.target.value}]}))
     }
 
   return (
