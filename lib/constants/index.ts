@@ -283,11 +283,43 @@ export const whyUs = [
 ]
 
 
-export const automations = [
-  {icon: "P", heading: "Gmail Outreach Bot", para: "Automate Your Cold Outreach sending out 50-1000 emails/day"},
-  {icon: "P", heading: "Gmail Outreach Bot", para: "Automate Your Cold Outreach sending out 50-1000 emails/day"},
-  {icon: "P", heading: "Gmail Outreach Bot", para: "Automate Your Cold Outreach sending out 50-1000 emails/day"},
-  {icon: "P", heading: "Gmail Outreach Bot", para: "Automate Your Cold Outreach sending out 50-1000 emails/day"},
-  {icon: "P", heading: "Gmail Outreach Bot", para: "Automate Your Cold Outreach sending out 50-1000 emails/day"},
-  {icon: "P", heading: "Gmail Outreach Bot", para: "Automate Your Cold Outreach sending out 50-1000 emails/day"},
-]
+import { FaEnvelope, FaPhoneAlt, FaCalendarCheck, FaComments, FaYoutube, FaRobot } from "react-icons/fa";
+
+export const automationTools = [
+  {
+    title: "Gmail Outreach Bot",
+    description:
+      "Automate your cold outreach, sending out 50–1000 emails per day without manual effort.",
+    icon: FaEnvelope,
+  },
+  {
+    title: "Voice Call Agent",
+    description:
+      "This AI-powered inbound voice agent answers calls, books appointments, answers FAQs, and follows up without needing a human on the line.",
+    icon: FaPhoneAlt,
+  },
+  {
+    title: "AI Appointment Setter",
+    description:
+      "Automatically qualify inbound leads via IG DMs and get them to book an appointment if they’re qualified for your service or product.",
+    icon: FaCalendarCheck,
+  },
+  {
+    title: "Appointment Booking with FAQ Chatbot",
+    description:
+      "A fully automated AI chatbot that answers customer questions and books appointments on your calendar without human involvement.",
+    icon: FaComments,
+  },
+  {
+    title: "YouTube Viral Video Idea Generator",
+    description:
+      "This plug-and-play n8n automation analyzes top-performing YouTube videos in your niche and gives you new content ideas with real data: titles, keywords, and angles your audience is searching for.",
+    icon: FaYoutube,
+  },
+  {
+    title: "AI Content Creation Agent (Veo 3 + n8n)",
+    description:
+      "Effortlessly create and post short-form videos on autopilot to all your social platforms using advanced AI automation.",
+    icon: FaRobot,
+  },
+];
