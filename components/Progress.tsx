@@ -38,7 +38,7 @@ const ProgressDots = () => {
                     duration: 1,
                     ease: "easeInOut",
                   }}
-                  className="h-[2px] origin-left absolute left-0 top-0"
+                  className="h-[1px] origin-left absolute left-0 top-0"
                 />
               </div>
             )}
@@ -53,7 +53,7 @@ const ProgressDots = () => {
                   scale: activeIndex === i ? 1.4 : 1,
                 }}
                 transition={{ duration: 0.4 }}
-                className="w-3 h-3 rounded-full"
+                className="w-2 h-2 rounded-full"
               />
               <p
                 className={`text-xs text-zinc-300 absolute -bottom-[24px]`}

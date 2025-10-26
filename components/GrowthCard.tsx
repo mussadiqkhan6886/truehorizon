@@ -40,6 +40,7 @@ const GrowthCard = () => {
             delay: 4000,
             disableOnInteraction: false,
             }}
+            speed={500}
             direction="vertical"
             slidesPerView={3}
             centeredSlides={true}

@@ -3,6 +3,7 @@ import WorkFlow from './WorkFlow';
 
 import AI from './AI';
 import GrowthCard from './GrowthCard';
+import Custom from './Custom';
 
 interface Props {
     left: boolean,
@@ -40,7 +41,7 @@ const Service = ({left, title, para, header, points}: Props) => {
     }else if(header.toLowerCase().includes("sales")){
         imageSection = <GrowthCard />
     }else if(header.toLowerCase().includes("projects")){
-        imageSection = <div className='w-[450px] h-[370px] rounded-3xl bg-[#0d0d0dcc] p-[50px] pb-0'></div>
+        imageSection = <Custom />
     }else {
         imageSection = <div className='w-[450px] h-[370px] rounded-3xl bg-[#0d0d0dcc] p-[50px] pb-0'></div>
     }
