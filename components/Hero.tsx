@@ -16,19 +16,6 @@ const Hero = () => {
             hue={313}
             forceHoverState={false}
         />
-        {/* <div style={{ width: '100%', height: '500px', position: 'absolute' }}>
-        <Galaxy 
-            mouseRepulsion={false}
-            mouseInteraction={false}
-            density={0.2}
-            glowIntensity={0.1}
-            saturation={0}
-            hueShift={140}
-            twinkleIntensity={0.1}
-            starSpeed={0.2}
-        />
-        </div> */}
-        
         <div className='z-20 sm:px-[35px] md:px-[70px] lg:px-[160px] flex flex-col text-white items-center justify-center min-h-screen'>
             <div className='flex items-center justify-center gap-3 font-[500] p-0.5 rounded-2xl bg-black z-10'>
                 <div className='bg-purple-700 text-[12px] py-0.5 text-base  rounded-xl px-2'>New</div>
