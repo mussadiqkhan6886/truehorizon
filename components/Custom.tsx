@@ -11,7 +11,7 @@ const Custom = () => {
         <motion.div variants={variants} initial="hidden" whileInView={"show"} viewport={{once: true, amount: 0.2}} className='bg-black rounded-lg border text-[13px] border-zinc-800 p-3 h-full'>
             <p>Hey David</p>
             <p className='text-zinc-200 text-[12px] mb-2'>Here is your Custom project & schedule</p>
-            <div className='border relative border-zinc-800 p-2 rounded-md bg-zinc-900/50'>
+            <div className='border relative border-zinc-800 p-2 rounded-md h-full bg-zinc-900/50'>
                 <div className='flex gap-2 items-center mb-2'>
                     <FiFilter />
                     <p>On going project:</p>
@@ -30,8 +30,8 @@ const Custom = () => {
                 </div>
                 <div className='h-0.5 opacity-65 bg-gradient-to-r absolute from-0% via-white to-0% w-full my-2' />
                 <div className='h-0.5 opacity-65 bg-gradient-to-l absolute from-0% via-white to-0% w-full my-2' />
-                <div className='mt-6 '>
-                    <div>
+                <div className='mt-6 relative'>
+                    <div className='absolute w-full'>
                         <div className='bg-zinc-900 rounded-md p-1 px-1.5'>
                             <div className='flex gap-1 mb-1 items-center text-[12px]'>
                                 <FiCalendar />
@@ -47,10 +47,63 @@ const Custom = () => {
                                 <p className='bg-fuchsia-900 rounded-sm p-[1px] px-0.5'>Su</p>
                             </div>
                         </div>
-                        <div className='mt-1 h-[90px] text-zinc-300 text-[11px] border-t border-zinc-700/50 place-content-center grid'>
+                        <div className='mt-1 h-[90px] text-zinc-300 text-[11px] border-t border-zinc-700/50 place-content-center grid bg-zinc-900 '>
                             <p>No meeting today</p>
                         </div>
                     </div>
+                    
+                    <div className='absolute disappear-1 w-full'>
+                        <div className='bg-zinc-900 rounded-md p-1 px-1.5'>
+                            <div className='flex gap-1 mb-1 items-center text-[12px]'>
+                                <FiCalendar />
+                                <p className='font-[500]'>Schedule</p>
+                            </div>
+                            <div className='flex gap-1.5 text-[10px] text-zinc-200'>
+                                <p className='p-[1px]'>Mo</p>
+                                <p className='p-[1px]'>Tu</p>
+                                <p className='p-[1px]'>We</p>
+                                <p className='bg-fuchsia-900 rounded-sm px-0.5 p-[1px]'>Th</p>
+                                <p className='p-[1px]'>Fr</p>
+                                <p className='p-[1px]'>Sa</p>
+                                <p className='p-[1px]'>Su</p>
+                            </div>
+                        </div>
+                        <div className='mt-1 h-[90px] text-zinc-300 text-[11px] border-t border-zinc-700/50 p-3 bg-zinc-950'>
+                            <div className='mb-2'>
+                                <p>Lead gen, tutorial</p>
+                                <p>6:40am to 7:30am</p>
+                            </div>
+                            <div>
+                                <p>Efficiency testing</p>
+                                <p>10:00pm to 10:30pm</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className='absolute disappear-2 w-full'>
+                        <div className='bg-zinc-900 rounded-md p-1 px-1.5'>
+                            <div className='flex gap-1 mb-1 items-center text-[12px]'>
+                                <FiCalendar />
+                                <p className='font-[500]'>Schedule</p>
+                            </div>
+                            <div className='flex gap-1.5 text-[10px] text-zinc-200'>
+                                <p className='bg-fuchsia-900 rounded-sm px-0.5 p-[1px]'>Mo</p>
+                                <p className='p-[1px]'>Tu</p>
+                                <p className='p-[1px]'>We</p>
+                                <p className='p-[1px]'>Th</p>
+                                <p className='p-[1px]'>Fr</p>
+                                <p className='p-[1px]'>Sa</p>
+                                <p className='p-[1px]'>Su</p>
+                            </div>
+                        </div>
+                        <div className='mt-1 h-[90px] text-zinc-300 text-[11px] border-t border-zinc-700/50  bg-zinc-950 p-3'>
+                            <div>
+                                <p>Discovery Call</p>
+                                <p>2:15am to 4:20am</p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </motion.div>

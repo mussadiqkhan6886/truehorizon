@@ -110,3 +110,22 @@ html{
   scroll-behavior: smooth;
 }
 
+.disappear-1{
+  animation: appear1 10s 10s ease-in-out infinite ;
+}
+.disappear-2{
+  animation: appear1 10s 2s ease-in-out infinite ;
+}
+
+@keyframes appear1 {
+  0%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+
+  }
+}

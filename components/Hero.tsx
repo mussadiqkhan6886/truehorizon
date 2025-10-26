@@ -3,7 +3,6 @@ import Orb from './ORB'
 import { TextGenerateEffect } from './ui/TextGenerateEffect';
 import Button from './Button';
 import {FiArrowRight} from "react-icons/fi"
-import Galaxy from './Stars';
 
 const Hero = () => {
     const Heading = `True Horizon That Builds, Not Just Advises.`;

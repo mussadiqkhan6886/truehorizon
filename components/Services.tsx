@@ -13,6 +13,8 @@ const Services = () => {
       <Service left={false} title='Accelerate Sales Growth' para='AI tools for lead generation, personalized outreach, and automated content creation that scales your sales efforts and builds stronger brand presence.' header='Sales & Marketing' points={["Leads","Content","Social post"]} />
 
       <Service left={true} title='Build Smarter Systems' para='Whether you are starting from scratch or enhancing an existing system, we offer strategic consulting and develop custom AI projects aligned with your unique goals.' header='Custom Projects' points={["Strategy","Custom AI","Consulting"]} />
+
+      <Service left={false} title='Build Professional Website' para='We Offer Professional modern archeticure design website with better performance and rating.' header='Website Building' points={["Modern UI/UX","SEO","Optimized"]} />
      
     </section>
   )
