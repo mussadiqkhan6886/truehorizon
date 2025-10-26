@@ -13,7 +13,7 @@ const CodeBlock = () => {
           <span className="text-purple-500">def</span> __init__(self, threshold):
           {"\n"}
           {"        "}self.threshold = threshold{"\n"}
-          {"        "}self.status = <span className="text-green-400">"inactive"</span>
+          {"        "}self.status = <span className="text-green-400">&quot;inactive&quot;</span>
           {"\n\n"}
           {"    "}
           <span className="text-purple-500">def</span> check_trigger(self, value):
@@ -21,25 +21,25 @@ const CodeBlock = () => {
           {"        "}
           <span className="text-purple-500">if</span> value &gt; self.threshold:
           {"\n"}
-          {"            "}self.status = <span className="text-green-400">"active"</span>
+          {"            "}self.status = <span className="text-green-400">&quot;active&quot;</span>
           {"\n"}
           {"            "}
           <span className="text-purple-500">return</span>{" "}
-          <span className="text-green-400">"Automation triggered!"</span>
+          <span className="text-green-400">&quot;Automation triggered!&quot;</span>
           {"\n"}
           {"        "}
           <span className="text-purple-500">else</span>:
           {"\n"}
           {"            "}
           <span className="text-purple-500">return</span>{" "}
-          <span className="text-green-400">"No action taken."</span>
+          <span className="text-green-400">&quot;No action taken.&quot;</span>
           {"\n\n"}
           {"    "}
           <span className="text-purple-500">def</span> get_status(self):
           {"\n"}
           {"        "}
           <span className="text-purple-500">return</span>{" "}
-          <span className="text-green-400">f"Status: &#123;self.status&#125;"</span>
+          <span className="text-green-400">f&quot;Status: &#123;self.status&#125;&quot;</span>
         </code>
       </pre>
     </div>
