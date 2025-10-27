@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import {Figtree} from "next/font/google"
-import "./globals.css";
 import Header from "@/components/admin/Header";
+import "@/app/globals.css";
 
 const figtree = Figtree({
   weight: ["300", "400", "500", "600", "700", "800"],

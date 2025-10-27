@@ -3,13 +3,13 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <header className="flex p-3 px-6 justify-between items-center bg-gray-200">
-      <div className='flex gap-2 items-center'>
-        <Link href="/admin/contact" />
-        <Link href="/admin/booking" />
+    <header className="flex py-3 px-6 justify-between text-black font-semibold text-lg tracking-tight items-center bg-gray-200">
+      <div className='flex gap-4 items-center'>
+        <Link className='border border-black px-5 py-1.5' href="/admin/contact">Contact</Link>
+        <Link className='border border-black px-5 py-1.5' href="/admin/booking">Booking</Link>
       </div>
       <div>
-        <Link href="/" />
+        <Link className='border border-black px-5 py-1.5' href="/" >Home</Link>
       </div>
     </header>
   )
