@@ -8,7 +8,7 @@ import { variants } from '@/lib/constants';
 const Custom = () => {
   return (
     <div className='w-[450px] h-[370px] overflow-hidden rounded-3xl bg-[#0d0d0dcc] relative p-[50px] pb-0'>
-        <motion.div variants={variants} initial="hidden" whileInView={"show"} viewport={{once: true, amount: 0.2}} className='bg-black rounded-lg border text-[13px] border-zinc-800 p-3 h-full'>
+        <motion.div variants={variants} initial="hidden" whileInView={"show"} viewport={{once: true, amount: 0.2}} className='bg-black rounded-lg border text-[13px] border-zinc-800 p-3 h-full px-6 sm:px-0'>
             <p>Hey David</p>
             <p className='text-zinc-200 text-[12px] mb-2'>Here is your Custom project & schedule</p>
             <div className='border relative border-zinc-800 p-2 rounded-md h-full bg-zinc-900/50'>

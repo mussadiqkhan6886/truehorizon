@@ -4,8 +4,6 @@ import WorkFlow from './WorkFlow';
 import AI from './AI';
 import GrowthCard from './GrowthCard';
 import Custom from './Custom';
-import Image from 'next/image';
-import Hero from './wesitePage/Hero';
 import Galaxy from './Stars';
 
 interface Props {
@@ -19,7 +17,7 @@ interface Props {
 const Service = ({left, title, para, header, points}: Props) => {
 
     const details = (
-    <div className="flex max-w-[320px] flex-col items-start gap-4 w-full md:max-w-xl">
+    <div className="flex max-w-[300px] flex-col items-start gap-4 w-full md:max-w-xl">
       <div className="text-sm font-[500] border border-gray-700 px-2.5 py-1.5 mb-2 rounded-md">{header}</div>
       <div>
         <h3 className="text-2xl md:text-4xl font-semibold mb-2">{title}</h3>
@@ -46,8 +44,8 @@ const Service = ({left, title, para, header, points}: Props) => {
     }else if(header.toLowerCase().includes("projects")){
         imageSection = <Custom />
     }else {
-        imageSection = <div className='w-[450px] overflow-hidden h-[370px] grid place-content-center relative rounded-3xl bg-[#0d0d0dcc] pb-0'>
-            <h5 className='text-3xl tracking-tight font-bold text-center'>We create dynamic brands that help new companies grow.</h5>
+        imageSection = <div className='w-[450px] overflow-hidden h-[370px] grid place-content-center relative rounded-3xl bg-[#0d0d0dcc] p-5 pb-0'>
+            <h5 className='text-3xl tracking-tight px-10 sm:px-2 font-bold text-center'>We create dynamic brands that help new companies grow.</h5>
             <Galaxy />
           <div className='bg-gradient-to-t from-[rgb(8,8,8)] to-transparent  absolute bottom-0 w-full h-[60px] left-0 z-10' />
         </div>

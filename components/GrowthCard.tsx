@@ -21,7 +21,7 @@ const GrowthCard = () => {
   return (
     <div className='w-[450px] overflow-hidden relative h-[370px] rounded-3xl bg-[#0d0d0dcc] p-[50px] pb-0'>
         <motion.div variants={variants} initial="hidden" whileInView={"show"} viewport={{once: true, amount: 0.2}}   className="p-2 border border-zinc-800 rounded-md bg-black">
-        <div>
+        <div className="px-3 sm:px-0">
             <div className="p-2 bg-zinc-900/50 border border-zinc-800 rounded-md flex items-center justify-between">
                 <p className="text-[11px] pl-1">E-mail sending...</p>
                  <div className='border-2 pr-2 w-[18px]  h-[18px] duration-200 rounded-full border-purple-800 animate-spin bg-transparent relative'>

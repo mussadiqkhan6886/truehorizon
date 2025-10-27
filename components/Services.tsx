@@ -19,7 +19,7 @@ const Services = () => {
         title="Launch Stunning, High-Performance Websites"
         para="From sleek business sites to full-scale eCommerce platforms, we design and develop visually captivating, fast-loading, and SEO-optimized websites that turn visitors into customers. Built to impress — and built to last."
         header="Website Development"
-        points={["Responsive Design", "eCommerce Ready", "SEO Optimized"]}
+        points={["Responsive Design", "eCommerce", "SEO Optimized"]}
       />
      
     </section>
