@@ -1,9 +1,20 @@
+'use client';
+
 import { TextGenerateEffect } from '@/components/ui/TextGenerateEffect'
 import React from 'react'
+import Cal, { getCalApi } from "@calcom/embed-react";
+import { useEffect } from "react";
 
 const Call = () => {
   const Heading = "Book a Call with us";
   const para ='Have questions or need AI solutions? Let us know by filling out the form, and we’ll be in touch!';
+
+  useEffect(() => {
+    (async function () {
+      const cal = await getCalApi({"namespace":"30min"});
+      cal("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
+    })();
+  }, [])
 
   return (
     <main className="pt-4 flex flex-col justify-center items-center overflow-x-hidden min-h-screen text-white bg-black">
@@ -14,6 +25,11 @@ const Call = () => {
             <TextGenerateEffect className='text-base leading-snug tracking-wide text-center font-normal text-gray-300' duration={1.5} filter={true} words={para} />
         </div>
       </div>
+      <Cal namespace="30min"
+        calLink="truehorizon-ai/30min"
+        style={{width:"100%",height:"100%",overflow:"scroll"}}
+        config={{"layout":"month_view"}}
+      />
     </main>
   )
 }

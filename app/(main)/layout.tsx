@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import {Figtree} from "next/font/google"
-import "./globals.css";
+import "../globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
@@ -67,7 +67,7 @@ export const metadata: Metadata = {
   },
   category: "Artificial Intelligence, Automation, Business Consulting",
   alternates: {
-    canonical: "https://truehorizon.ai/",
+    canonical: "http\s://truehorizon.ai/",
   },
   icons: {
     icon: "/favicon.ico",
