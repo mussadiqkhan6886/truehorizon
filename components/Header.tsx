@@ -21,8 +21,8 @@ const Header = () => {
         </ul>
         <Button text='Book a call' color='purple' link='/call' />
       </nav>
-      {!show && <FiMenu className='block md:hidden' onClick={() => setShow(true)} />}
-      {show && <p  className='block md:hidden' onClick={() => setShow(false)}>X</p>}
+      {!show && <FiMenu className='block md:hidden cursor-pointer' onClick={() => setShow(true)} />}
+      {show && <p  className='block md:hidden cursor-pointer' onClick={() => setShow(false)}>X</p>}
       {show && <aside className='block md:hidden bg-black absolute top-20 pb-10 right-0 w-full'>
         <nav className='flex gap-8 flex-col text-sm items-start pl-5'>
           <ul className='flex flex-col gap-8'>
