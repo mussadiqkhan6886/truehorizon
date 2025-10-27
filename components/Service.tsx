@@ -4,6 +4,9 @@ import WorkFlow from './WorkFlow';
 import AI from './AI';
 import GrowthCard from './GrowthCard';
 import Custom from './Custom';
+import Image from 'next/image';
+import Hero from './wesitePage/Hero';
+import Galaxy from './Stars';
 
 interface Props {
     left: boolean,
@@ -16,12 +19,12 @@ interface Props {
 const Service = ({left, title, para, header, points}: Props) => {
 
     const details = (
-    <div className="flex max-w-[300px] flex-col items-start gap-4 w-full md:max-w-xl">
+    <div className="flex max-w-[320px] flex-col items-start gap-4 w-full md:max-w-xl">
       <div className="text-sm font-[500] border border-gray-700 px-2.5 py-1.5 mb-2 rounded-md">{header}</div>
       <div>
         <h3 className="text-2xl md:text-4xl font-semibold mb-2">{title}</h3>
         <p className="text-gray-200 text-[12px] md:text-base mb-4">{para}</p>
-        <ul className="flex gap-4">
+        <ul className="flex gap-3">
           {points.map((item, i) => (
             <li key={i} className="text-[11px] sm:text-sm font-[500] border border-gray-700 px-2.5 py-1.5 mb-2 rounded-md">
               {item}
@@ -43,11 +46,15 @@ const Service = ({left, title, para, header, points}: Props) => {
     }else if(header.toLowerCase().includes("projects")){
         imageSection = <Custom />
     }else {
-        imageSection = <div className='w-[450px] h-[370px] rounded-3xl bg-[#0d0d0dcc] p-[50px] pb-0'></div>
+        imageSection = <div className='w-[450px] overflow-hidden h-[370px] grid place-content-center relative rounded-3xl bg-[#0d0d0dcc] pb-0'>
+            <h5 className='text-3xl tracking-tight font-bold text-center'>We create dynamic brands that help new companies grow.</h5>
+            <Galaxy />
+          <div className='bg-gradient-to-t from-[rgb(8,8,8)] to-transparent  absolute bottom-0 w-full h-[60px] left-0 z-10' />
+        </div>
     }
 
   return (
-    <section className="flex flex-col lg:flex-row items-center justify-between gap-24 mb-20 max-w-[1020px]">
+    <section className="flex flex-col lg:flex-row items-center justify-between gap-20 mb-20 max-w-[1020px]">
       {left ? (
         <>
           <div className='px-4 md:pr-10'>{details}</div>
