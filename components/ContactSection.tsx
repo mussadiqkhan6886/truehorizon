@@ -19,6 +19,8 @@ const ContactSection = () => {
     service: '',
   });
 
+  const [status, setStatus] = useState("") 
+
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
@@ -54,7 +56,7 @@ const ContactSection = () => {
       .then(
         (response) => {
           console.log('SUCCESS!', response.status, response.text);
-          alert('Your message has been sent successfully!');
+          setStatus('Your message has been sent successfully!');
           setData({
             firstName: '',
             lastName: '',
@@ -71,7 +73,7 @@ const ContactSection = () => {
         },
         (error) => {
           console.error('FAILED...', error);
-          alert('Something went wrong. Please try again later.');
+          setStatus('Something went wrong. Please try again later.');
         }
       );
   };
@@ -85,7 +87,7 @@ const ContactSection = () => {
             <FaEnvelope />
             <p>E-mail</p>
           </div>
-          <p>truehorizon@gmail.com</p>
+          <p>truehorizonai@gmail.com</p>
         </div>
         <div className='border relative overflow-hidden border-zinc-800 rounded-lg p-6 min-w-[310px]'>
           <div className='absolute -bottom-[60px] w-[100px] h-[50px] -right-[20px] bg-purple-800 blur-3xl' />
@@ -253,6 +255,7 @@ const ContactSection = () => {
           Submit Form
         </button>
       </form>
+      <p>{status}</p>
     </div>
   );
 };
