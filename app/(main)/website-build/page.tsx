@@ -1,7 +1,8 @@
 import Hero from '@/components/wesitePage/Hero'
 import Profile from '@/components/wesitePage/Profile'
-import Services from '@/components/wesitePage/services'
 import React from 'react'
+import Services from '@/components/wesitePage/Services'
+import Process from '@/components/wesitePage/Process'
 
 const Website = () => {
   return (
@@ -9,6 +10,7 @@ const Website = () => {
       <Hero />
       <Profile />
       <Services />
+      <Process />
     </main>
   )
 }

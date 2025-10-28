@@ -251,6 +251,7 @@ export const footerLinks = [
       { name: "Home", link: "/" },
       { name: "About", link: "/about" },
       { name: "Contact", link: "/contact" },
+      { name: "Development", link: "/website-build" },
       { name: "404", link: "/not-found" },
     ],
   },
@@ -315,5 +316,82 @@ export const automationTools = [
     title: "AI Content Creation Agent (Veo 3 + n8n)",
     description:
       "Effortlessly create and post short-form videos on autopilot to all your social platforms using advanced AI automation.",
+  },
+];
+
+export const servicesData = [
+  {
+    id: 1,
+    category: "Development",
+    services: ["Custom Websites", "Web Apps", "Landing Pages"],
+    description:
+      "We build fast, scalable, and secure websites tailored to your business goals — from custom-coded sites to dynamic web applications and high-converting landing pages.",
+    image: "/development.jpg", // use your own asset path or icon
+  },
+  {
+    id: 2,
+    category: "Design",
+    services: ["UI/UX", "Redesign", "Responsive Design"],
+    description:
+      "Our design team crafts intuitive and modern interfaces that captivate users. We focus on user experience, aesthetics, and fully responsive layouts for every device.",
+    image: "/design.jpg",
+  },
+  {
+    id: 3,
+    category: "eCommerce",
+    services: ["Online Stores", "Payments", "Inventory Systems"],
+    description:
+      "Launch your online store with smooth checkout flows, secure payment gateways, and easy inventory management — everything you need to grow your business online.",
+    image: "/ecommerce.jpg",
+  },
+  {
+    id: 4,
+    category: "Optimization",
+    services: ["SEO", "Speed", "Accessibility", "Maintenance"],
+    description:
+      "Boost your website’s performance, visibility, and usability. We optimize speed, SEO structure, accessibility, and provide ongoing support for seamless operation.",
+    image: "/seo.jpg",
+  },
+  {
+    id: 5,
+    category: "Branding",
+    services: ["Logo", "Content", "Analytics", "Social Integration"],
+    description:
+      "Build a memorable digital identity. From logo design to SEO-friendly content and integrated analytics — we help your brand stand out and stay consistent online.",
+    image: "/marketing.jpg",
+  },
+];
+
+
+export const processSteps = [
+  {
+    id: 1,
+    title: "Meeting",
+    description:
+      "We start with a detailed chat  in person, on Zoom, or by phone to understand your goals and vision for the perfect website.",
+  },
+  {
+    id: 2,
+    title: "Pay Deposit",
+    description:
+      "After defining the project scope and cost, we take a 50% deposit and gather all the information and assets needed to begin.",
+  },
+  {
+    id: 3,
+    title: "Website is Built",
+    description:
+      "We assist you in setting up domain names, hosting, and email then begin crafting your beautiful, fully functional website.",
+  },
+  {
+    id: 4,
+    title: "Testing",
+    description:
+      "Every page and feature is thoroughly tested for performance, responsiveness, and usability to ensure everything works flawlessly.",
+  },
+  {
+    id: 5,
+    title: "Delivery",
+    description:
+      "The big reveal! We present your finished website, apply any final adjustments, and request the remaining balance before launch.",
   },
 ];
