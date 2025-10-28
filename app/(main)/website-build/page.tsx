@@ -6,7 +6,7 @@ import Offers from '@/components/wesitePage/Offers'
 
 const Website = () => {
   return (
-    <main className="pt-4 overflow-x-hidden  md:pt-0 bg-black">
+    <main className="overflow-x-hidden bg-black">
       <Hero />
       <Profile />
       <Offers />

@@ -30,9 +30,9 @@ const Card = ({image, category, description, id, services}: {image: string, cate
   return (
     <section className='flex flex-col md:flex-row justify-between'>
       <motion.div variants={variant1} initial="hidden" whileInView={"show"} viewport={{once: true, amount: 0.2}} className='w-full md:w-[60%] md:p-16 px-24 pt-0'>
-        <Image className='w-full h-full object-center object-cover' src={image} alt={category} width={200} height={200} />
+        <Image className='w-full h-full hidden md:block object-center object-cover' src={image} alt={category} width={200} height={200} />
       </motion.div>
-      <motion.div variants={variant2} initial="hidden" whileInView={"show"} viewport={{once: true, amount: 0.2}} className='md:w-[60%] flex gap-10 border-b border-zinc-800 py-10'>
+      <motion.div variants={variant2} initial="hidden" whileInView={"show"} viewport={{once: true, amount: 0.2}} className='md:w-[60%] flex gap-6 md:gap-10 border-b border-zinc-800 py-10'>
         <div>
             <p className='text-sm text-gray-700'>0{id}</p>
         </div>

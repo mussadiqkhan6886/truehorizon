@@ -339,7 +339,7 @@ export const servicesData = [
   {
     id: 3,
     category: "eCommerce",
-    services: ["Online Stores", "Payments", "Inventory Systems"],
+    services: ["Online Stores", "Payments"],
     description:
       "Launch your online store with smooth checkout flows, secure payment gateways, and easy inventory management — everything you need to grow your business online.",
     image: "/ecommerce.jpg",
