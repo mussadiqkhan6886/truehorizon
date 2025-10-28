@@ -4,7 +4,7 @@ import { TextGenerateEffect } from '../ui/TextGenerateEffect'
 const Profile = () => {
   return (
     <section 
-  className='bg-zinc-950 min-h-screen text-white p-7 md:p-16 [clip-path:polygon(50%_0%,100%_0,100%_35%,100%_91%,84%_98%,43%_100%,6%_97%,0_88%,0%_35%,0_0)]'
+  className='bg-zinc-950 min-h-screen text-white p-7 md:p-16'
 >
   <div className='max-w-[910px]  flex flex-col gap-16 mx-auto'>
     <div className='p-2 md:p-0'>
