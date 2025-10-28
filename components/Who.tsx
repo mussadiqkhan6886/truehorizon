@@ -9,7 +9,7 @@ const Who = () => {
     <section className='my-10 px-3 max-w-[970px] mx-auto'>
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
         {about.map((item, i) => (
-            <motion.div variants={variants2(item.delay)} initial="hidden" whileInView={"show"} key={i} className='border border-zinc-800 px-8 py-5 rounded-lg relative overflow-hidden'>
+            <motion.div variants={variants2(item.delay)} initial="hidden" whileInView={"show"} viewport={{once: true, amount: 0.2}} key={i} className='border border-zinc-800 px-8 py-5 rounded-lg relative overflow-hidden'>
                 <div className='text-white opacity-100 z-10 flex gap-2 mb-2 text-lg md:text-xl font-semibold items-center'>
                     <item.icon />
                     <h3>{item.title}</h3>

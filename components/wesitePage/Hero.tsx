@@ -1,5 +1,5 @@
 import React from 'react'
-import Galaxy from '../Stars'
+import {Galaxy} from '../Stars'
 import { TextGenerateEffect } from '../ui/TextGenerateEffect'
 import Button from '../Button'
 import { FiArrowRight } from 'react-icons/fi'

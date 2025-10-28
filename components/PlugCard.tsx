@@ -1,5 +1,5 @@
 import React from 'react'
-import ORB from './ORB'
+import {ORB} from './ORB'
 import { InfiniteMovingCode } from './ui/Code'
 import SwiperImages from './SwiperImages'
 

@@ -10,7 +10,7 @@ const Study = () => {
   return (
     <section id='case-studies' className='py-10 mb-10 text-white'>
       <Title buttonHeading='Case Studies' firstLine='Case Study — The' secondLine="Village of Robbins" para='Smart Government Systems for a Smarter Community' />
-      <motion.div variants={variants2(0.2)} initial="hidden" whileInView={"show"} className='flex flex-col items-center md:flex-row mt-10 gap-12 max-w-[940px]  mx-auto'>
+      <motion.div variants={variants2(0.2)} viewport={{once: true, amount: 0.2}} initial="hidden" whileInView={"show"} className='flex flex-col items-center md:flex-row mt-10 gap-12 max-w-[940px]  mx-auto'>
         <div className='flex-1 w-full md:w-[50%] overflow-hidden relative'>
             <Image src={"/studyImage.png"} className='w-full h-full object-center object-cover scale-110' width={500} height={500} alt='image study' />
             <div className='absolute -left-10 w-[100px] z-10 top-0 h-full bg-gradient-to-r from-black to-black/10' />

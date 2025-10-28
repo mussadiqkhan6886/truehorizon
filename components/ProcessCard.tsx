@@ -25,7 +25,7 @@ const ProcessCard = ({id, title, detail}: {id: number, title: string, detail: st
   }
 
   return (
-    <motion.div variants={variants2(0.2)} initial="hidden" whileInView={"show"} className='bg-zinc-900/40 flex flex-col justify-start items-start rounded-xl border border-zinc-800 p-7 sm:p-[27px]'>
+    <motion.div variants={variants2(0.2)} initial="hidden" whileInView={"show"} viewport={{once: true, amount: 0.2}} className='bg-zinc-900/40 flex flex-col justify-start items-start rounded-xl border border-zinc-800 p-7 sm:p-[27px]'>
       <div className='text-[12px] border border-zinc-800 px-1.5 rounded-sm py-0.5'>Step {id}</div>
       <div>
         <h4 className='text-[22px] font-semibold mb-2.5 mt-1.5'>{title}</h4>

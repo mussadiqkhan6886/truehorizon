@@ -4,7 +4,7 @@ import WorkFlow from './WorkFlow';
 import AI from './AI';
 import GrowthCard from './GrowthCard';
 import Custom from './Custom';
-import Galaxy from './Stars';
+import { Galaxy } from './Stars';
 
 interface Props {
     left: boolean,

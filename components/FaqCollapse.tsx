@@ -8,7 +8,7 @@ const FaqCollapse = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <motion.div variants={variants2(0.2)} initial="hidden" whileInView={"show"} className="relative max-w-3xl mx-auto py-10 space-y-3">
+    <motion.div variants={variants2(0.2)} initial="hidden" whileInView={"show"} viewport={{once: true, amount: 0.2}} className="relative max-w-3xl mx-auto py-10 space-y-3">
       {faqs.map((faq, i) => {
         const isOpen = openIndex === i;
 

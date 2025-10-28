@@ -9,7 +9,7 @@ const Us = () => {
      <section className='my-10 max-w-4xl mx-auto'>
         <div className='grid grid-cols-1 md:grid-cols-2 px-1 gap-5'>
             {whyUs.map((item, i) => (
-                <motion.div variants={variants2(0.2)} initial="hidden" whileInView={"show"} key={i} className='relative border border-zinc-800 rounded-lg p-6 overflow-hidden'>
+                <motion.div variants={variants2(0.2)} initial="hidden" whileInView={"show"} viewport={{once: true, amount: 0.2}} key={i} className='relative border border-zinc-800 rounded-lg p-6 overflow-hidden'>
                     {item.heading.toLowerCase().includes("our") && (
                         <div className='w-[100px] h-[80px] absolute left-[40%] -top-[30px] rounded-full bg-fuchsia-900 blur-3xl' />
                     )}

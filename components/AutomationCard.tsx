@@ -6,7 +6,7 @@ import { variants } from '@/lib/constants';
 
 const AutomationCard = ({title, description}: {title: string, description: string}) => {
   return (
-    <motion.div variants={variants} whileInView={"show"} initial="hidden" className='border relative overflow-hidden border-zinc-800 rounded-md p-4'>
+    <motion.div variants={variants} whileInView={"show"} initial="hidden" viewport={{once: true, amount: 0.2}} className='border relative overflow-hidden border-zinc-800 rounded-md p-4'>
         <div className="bg-purple-900 blur-3xl opacity-60 w-[140px] h-[130px] -top-[120px] -left-[50px] absolute" />
       <div className='flex gap-2 z-10 items-center'>
         {/* <icon className="z-10" /> */}

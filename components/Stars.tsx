@@ -1,7 +1,7 @@
 'use client';
 
 import { Renderer, Program, Mesh, Color, Triangle } from 'ogl';
-import { useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 
 const vertexShader = `
 attribute vec2 uv;
@@ -190,7 +190,7 @@ interface GalaxyProps {
   transparent?: boolean;
 }
 
-export default function Galaxy({
+const Stars = ({
   focal = [0.5, 0.5],
   rotation = [1.0, 0.0],
   starSpeed = 0.5,
@@ -208,7 +208,7 @@ export default function Galaxy({
   autoCenterRepulsion = 0,
   transparent = true,
   ...rest
-}: GalaxyProps) {
+}: GalaxyProps) => {
   const ctnDom = useRef<HTMLDivElement>(null);
   const targetMousePos = useRef({ x: 0.5, y: 0.5 });
   const smoothMousePos = useRef({ x: 0.5, y: 0.5 });
@@ -352,3 +352,5 @@ export default function Galaxy({
 
   return <div ref={ctnDom} className="w-full h-full absolute z-0" {...rest} />;
 }
+
+export const Galaxy = React.memo(Stars)

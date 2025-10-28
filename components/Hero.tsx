@@ -1,14 +1,15 @@
 import React from 'react'
-import ORB from './ORB'
 import { TextGenerateEffect } from './ui/TextGenerateEffect';
 import Button from './Button';
 import {FiArrowRight} from "react-icons/fi"
+import { ORB } from './ORB';
 
-const Hero = () => {
+
+const HeroSection = () => {
     const Heading = `True Horizon That Builds, Not Just Advises.`;
     const para = `We don't hand you a strategy deck. We implement real AI systems—agents, automations, and dashboards that move the needle.`
   return (
-    <section className='min-h-screen pt-4 sm:pt-0' style={{ width: '100%', height: '600px', position: 'relative' }}>
+    <section className='min-h-screen bg-black pt-4 sm:pt-0' style={{ width: '100%', height: '100%', position: 'relative' }}>
         <ORB
             hoverIntensity={0.13}
             rotateOnHover={true}
@@ -33,4 +34,4 @@ const Hero = () => {
   )
 }
 
-export default Hero
+export const Hero = React.memo(HeroSection)
