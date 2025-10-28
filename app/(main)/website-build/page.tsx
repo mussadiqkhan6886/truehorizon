@@ -1,6 +1,6 @@
-import Services from '@/components/Services'
 import Hero from '@/components/wesitePage/Hero'
 import Profile from '@/components/wesitePage/Profile'
+import Services from '@/components/wesitePage/services'
 import React from 'react'
 
 const Website = () => {

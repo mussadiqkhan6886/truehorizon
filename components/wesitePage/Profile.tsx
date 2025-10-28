@@ -3,12 +3,12 @@ import { TextGenerateEffect } from '../ui/TextGenerateEffect'
 
 const Profile = () => {
   return (
-    <section className='bg-zinc-950 min-h-screen text-white p-16'>
+    <section className='bg-zinc-950 rounded-b-4xl min-h-screen text-white p-16'>
         <div className='max-w-[910px] h-full flex flex-col gap-16 mx-auto'>
             <div className='h-full'>
                 <h2 className='text-[35px] md:text-[45px] tracking-tight font-[500] leading-10 md:leading-15'>We accelerate ambition, grow brands, build digital products, and craft experiences that bring positive change, value, and innovation.</h2>
             </div>
-            <div className='h-full flex gap-5 md:gap-13 justify-between items-start'>
+            <div className='h-full rounded-b-4xl flex gap-5 md:gap-13 justify-between items-start'>
                 <div className='flex gap-3 items-center'>
                     <div className='w-2.5 mb-1 h-2.5 bg-fuchsia-800 rounded-full' />
                     <p className='text-[12px] sm:text-sm text-zinc-300'>COMPANY PROFILE</p>

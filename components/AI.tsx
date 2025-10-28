@@ -1,18 +1,18 @@
 'use client';
 
 import React from 'react'
-import Orb from './ORB';
 import { FiBarChart, FiImage, FiPaperclip, FiSend } from 'react-icons/fi';
 import TextType from './ui/Typewriter';
 import { variants } from '@/lib/constants';
 import {motion} from "framer-motion";
+import { ORB } from './ORB';
 
 const AI = () => {
   return (
     <div className='w-[450px] text-white relative h-[370px] rounded-3xl bg-[#0d0d0dcc] p-[50px] pb-0'>
           <motion.div variants={variants} initial="hidden" whileInView={"show"} viewport={{once: true, amount: 0.2}}  className='bg-black w-full rounded-2xl gap-1 border-b-0 flex justify-center flex-col items-center p-4 border-zinc-900 h-full border'>
             <div className='grid place-content-center'>
-              <Orb
+              <ORB
                   smaller={true}
                   hoverIntensity={0.13}
                   rotateOnHover={true}

@@ -1,5 +1,5 @@
 import React from 'react'
-import Orb from './ORB'
+import ORB from './ORB'
 import { InfiniteMovingCode } from './ui/Code'
 import SwiperImages from './SwiperImages'
 
@@ -9,7 +9,7 @@ const PlugCard = () => {
       <div className='flex '>
         <div className='h-full'>
           <div className='w-[70px] h-full border rounded-lg flex items-center justify-center border-zinc-800 px-2 py-1'>
-            <Orb
+            <ORB
                 smaller={true}
                 hoverIntensity={0.13}
                 rotateOnHover={true}

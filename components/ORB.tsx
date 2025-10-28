@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Renderer, Program, Mesh, Triangle, Vec3 } from 'ogl';
 
 interface OrbProps {
@@ -12,14 +12,14 @@ interface OrbProps {
   s?: number
 }
 
-export default function Orb({
+const Orb = ({
   hue = 0,
   hoverIntensity = 0.2,
   rotateOnHover = true,
   forceHoverState = false,
   smaller = false,
   s = 85
-}: OrbProps) {
+}: OrbProps) => {
   const ctnDom = useRef<HTMLDivElement>(null);
 
   const vert = /* glsl */ `
@@ -285,3 +285,4 @@ export default function Orb({
 
   return <div ref={ctnDom} className={` ${smaller ? `w-[60px] h-[60px]` : "w-full h-full absolute"} `} />;
 }
+export const ORB = React.memo(Orb)

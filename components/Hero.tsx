@@ -1,5 +1,5 @@
 import React from 'react'
-import Orb from './ORB'
+import ORB from './ORB'
 import { TextGenerateEffect } from './ui/TextGenerateEffect';
 import Button from './Button';
 import {FiArrowRight} from "react-icons/fi"
@@ -9,7 +9,7 @@ const Hero = () => {
     const para = `We don't hand you a strategy deck. We implement real AI systems—agents, automations, and dashboards that move the needle.`
   return (
     <section className='min-h-screen pt-4 sm:pt-0' style={{ width: '100%', height: '600px', position: 'relative' }}>
-        <Orb
+        <ORB
             hoverIntensity={0.13}
             rotateOnHover={true}
             hue={313}
