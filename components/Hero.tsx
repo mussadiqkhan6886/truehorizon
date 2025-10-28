@@ -7,23 +7,23 @@ import { ORB } from './ORB';
 
 const HeroSection = () => {
     const Heading = `True Horizon That Builds, Not Just Advises.`;
-    const para = `We don't hand you a strategy deck. We implement real AI systems—agents, automations, and dashboards that move the needle.`
+    const para = `We don't hand you a strategy deck. We implement real AI systems agents, automations, and dashboards that move the needle.`
   return (
-    <section className='min-h-[90vh] bg-black pt-4 sm:pt-0' style={{ width: '100%', height: '100%', position: 'relative' }}>
+    <section className='min-h-[90vh] bg-black' style={{ width: '100%', height: '100%', position: 'relative' }}>
         <ORB
             hoverIntensity={0.13}
             rotateOnHover={true}
             hue={313}
             forceHoverState={false}
         />
-        <div className='z-20 sm:px-[35px] md:px-[70px] lg:px-[160px] flex flex-col text-white items-center justify-center min-h-screen'>
+        <div className='z-20 sm:px-[35px] md:px-[70px] lg:px-[160px] flex flex-col text-white items-center justify-center min-h-[90vh]'>
             <div className='flex items-center justify-center gap-3 font-[500] p-0.5 rounded-2xl bg-black z-10'>
                 <div className='bg-purple-700 text-[12px] py-0.5 text-base  rounded-xl px-2'>New</div>
-                <div className='pr-2 text-sm overflow-hidden whitespace-nowrap animate-[show_5s_ease-out_forwards]'>Automated Voice Agent X Dashboard</div>
+                <div className='pr-2 text-[11px] sm:text-sm overflow-hidden whitespace-nowrap animate-[show_5s_ease-out_forwards]'>Automated Voice Agent X Dashboard</div>
             </div>
             <TextGenerateEffect className='text-[45px] md:text-[70px] tracking-tight md:leading-[74px] leading-14 text-center font-bold' duration={1} filter={true} words={Heading} />
             <div className='px-0 md:px-26 lg:px-50'>
-                <TextGenerateEffect className='text-base leading-snug tracking-wide text-center font-normal text-gray-300' duration={1.5} filter={true} words={para} />
+                <TextGenerateEffect className='text-base leading-snug tracking-wide text-center font-normal text-gray-300 px-4 sm:px-0 ' duration={1.5} filter={true} words={para} />
             </div>
             <div className='flex z-50 gap-7 mt-5'>
                 <Button text='Get in touch' color='purple' icon={<FiArrowRight className='inline' />} link='/call' />

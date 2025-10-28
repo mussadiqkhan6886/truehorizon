@@ -22,9 +22,9 @@ const Reviews = () => {
   return (
      <section className='py-10 text-white'>
       <Title buttonHeading='Testimonials' firstLine='Why Businesses Love' secondLine="Our AI Solutions" para='Real businesses, real results with AI automation.' />
-      <motion.div variants={variants2(0.2)} viewport={{once: true, amount: 0.2}} initial="hidden" whileInView={"show"} className='grid sm:px-10  md:grid-cols-2 max-w-5xl mx-auto gap-8 mt-16'>
+      <motion.div variants={variants2(0.2)} viewport={{once: true, amount: 0.2}} initial="hidden" whileInView={"show"} className='grid sm:px-10  md:grid-cols-2 max-w-5xl mx-auto gap-8 px-3 sm:px-0 mt-16'>
         {testimonials.map((review, i) => (
-            <div  key={i} className='border relative flex flex-col gap-5 border-zinc-800 rounded-md p-6 overflow-hidden'>
+            <div  key={i} className='border relative flex flex-col gap-5 border-zinc-800 rounded-md p-3 sm:p-6 overflow-hidden'>
                 <div className='flex text-xl'>{makeStars(review.rating)}</div>
                 <p className="z-10 text-sm sm:text-base text-zinc-300">&quot; {review.quote} &quot;</p>
                 <div className="z-10 flex gap-3">

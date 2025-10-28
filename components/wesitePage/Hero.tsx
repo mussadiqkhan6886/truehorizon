@@ -6,7 +6,7 @@ import { FiArrowRight } from 'react-icons/fi'
 
 const Hero = () => {
   return (
-    <section  className='min-h-[90vh] pt-4 sm:pt-0 relative' >
+    <section  className='min-h-[90vh] relative' >
       <div style={{ width: '100%', height: '100%', position: 'absolute' }}>
         <Galaxy
             mouseRepulsion={false}
@@ -20,9 +20,9 @@ const Hero = () => {
         />
       </div>
         <div className='z-20 h-[80vh] sm:px-[35px] md:px-[70px] lg:px-[160px] flex flex-col text-white items-center justify-center'>
-            <TextGenerateEffect className='text-[45px] md:text-[70px] tracking-tight md:leading-[74px] leading-14 text-center font-bold' duration={1} filter={true} words={"Transform Your Vision Into a High-Performing Digital Experience."} />
+            <TextGenerateEffect className='text-[35px] md:text-[70px] tracking-tight md:leading-[74px] leading-14 text-center font-bold' duration={1} filter={true} words={"Transform Your Vision Into a High-Performing Digital Experience."} />
             <div className='px-0 md:px-26 lg:px-50'>
-                <TextGenerateEffect className='text-base leading-snug tracking-wide text-center font-normal text-gray-300' duration={1.3} filter={true} words={"We combine strategy, design, and code to build fast, responsive, and future-ready websites that stand out in a crowded digital world."} />
+                <TextGenerateEffect className='text-[14px] md:text-base leading-snug tracking-wide text-center font-normal text-gray-300' duration={1.3} filter={true} words={"We combine strategy, design, and code to build fast, responsive, and future-ready websites that stand out in a crowded digital world."} />
             </div>
             <div className='flex z-50 gap-7 mt-5'>
                 <Button text='Get in touch' color='purple' icon={<FiArrowRight className='inline' />} link='/call' />

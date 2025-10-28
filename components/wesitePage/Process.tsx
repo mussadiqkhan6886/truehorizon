@@ -6,7 +6,7 @@ import { FiArrowDown, FiArrowDownCircle } from 'react-icons/fi'
 const Process = () => {
   return (
     <section className='bg-zinc-950 text-white p-10 max-w-[1300px] mx-auto flex flex-col items-center justify-center gap-10'>
-      <h4 className='text-4xl font-semibold'>What happens when you contact us about your website</h4>
+      <h4 className='text-4xl font-semibold text-center'>What happens when you contact us about your website</h4>
       <FiArrowDownCircle className='text-4xl' />
       <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-5 gap-6'>
         {processSteps.map(item => (

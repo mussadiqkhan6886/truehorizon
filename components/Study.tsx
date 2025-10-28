@@ -20,7 +20,7 @@ const Study = () => {
 
             </div>
             <div className=' lg:pr-6'>
-                <h5 className="text-2xl font-semibold mb-3 lg:pr-10">&quot;Smart Government Systems <br /> for a Smarter Community&quot;</h5>
+                <h5 className="text-2xl font-semibold mb-3 lg:pr-10">&quot;Smart Government Systems <br className='hidden md:inline' /> for a Smarter Community&quot;</h5>
                 <p className="text-zinc-300 mb-6 lg:pr-10 text-base">The Village of Robbins struggled with slow permit processing, scattered citizen requests, and rising admin costs. A.I Consulting built CivicFlow, an AI system that automated service routing, introduced a 24/7 resident chatbot, and gave administrators real-time dashboards for public works and budgeting.</p>
                 <div>
                     <h6 className='mb-2 text-zinc-300'>Impact : </h6>

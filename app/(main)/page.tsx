@@ -11,7 +11,7 @@ import { Hero } from "@/components/Hero";
 
 export default function Home() {
   return (
-    <main className="pt-4 overflow-x-hidden  md:pt-0 bg-black">
+    <main className="overflow-x-hidden  md:pt-0 bg-black">
       <Hero />
       <Trusted />
       <Services />
