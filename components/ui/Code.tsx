@@ -65,7 +65,7 @@ export const InfiniteMovingCode = ({
         className
       )}
     >
-      <ul
+      <div
         ref={scrollerRef}
         className={cn(
           "flex flex-col gap-3 py-4 text-[12px]",
@@ -78,7 +78,7 @@ export const InfiniteMovingCode = ({
             <Image key={i} src={item} alt="image" width={70} height={70} />
           ))
         : items}
-      </ul>
+      </div>
     </div>
   );
 };
