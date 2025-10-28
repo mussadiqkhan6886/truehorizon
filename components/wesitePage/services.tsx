@@ -32,7 +32,7 @@ const Services = () => {
       <div className='flex justify-between items-center'>
         <motion.div variants={variant1} initial="hidden" whileInView={"show"} className='flex gap-3 items-center'>
             <div className='w-2.5 mb-1 h-2.5 bg-fuchsia-800 rounded-full' />
-            <p className='text-[12px] sm:text-sm text-zinc-300'>OUR SERVICES</p>
+            <p className='text-[12px] sm:text-sm text-black'>OUR SERVICES</p>
         </motion.div>
         <motion.h3 variants={variant2} initial="hidden" whileInView={"show"} className='text-4xl'>
             A service offering designed to meet your every need
