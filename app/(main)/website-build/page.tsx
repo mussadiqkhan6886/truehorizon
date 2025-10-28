@@ -2,7 +2,7 @@ import Hero from '@/components/wesitePage/Hero'
 import Profile from '@/components/wesitePage/Profile'
 import React from 'react'
 import Process from '@/components/wesitePage/Process'
-import Offers from '@/components/wesitePage/Services'
+import Offers from '@/components/wesitePage/Offers'
 
 const Website = () => {
   return (

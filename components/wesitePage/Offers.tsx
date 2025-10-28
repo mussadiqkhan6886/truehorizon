@@ -3,7 +3,6 @@ import { servicesData } from '@/lib/constants';
 import Card from './Card';
 
 const Offers = () => {
-
   return (
     <section className='bg-white text-black p-16'>
       <div className='flex justify-between items-center'>
