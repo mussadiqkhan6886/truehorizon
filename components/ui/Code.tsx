@@ -20,7 +20,7 @@ export const InfiniteMovingCode = ({
   images?: string[]
 }) => {
   const containerRef = React.useRef<HTMLDivElement>(null);
-  const scrollerRef = React.useRef<HTMLUListElement>(null);
+  const scrollerRef = React.useRef<HTMLDivElement>(null);
   const [start, setStart] = useState(false);
 
   useEffect(() => {
