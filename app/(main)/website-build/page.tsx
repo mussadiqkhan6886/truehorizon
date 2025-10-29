@@ -38,7 +38,7 @@ export const metadata: Metadata = {
 };
 const Website = () => {
   return (
-    <main className="overflow-x-hidden bg-black">
+    <main className="overflow-x- pt-10 bg-black">
       <Hero />
       <Profile />
       <Offers />
