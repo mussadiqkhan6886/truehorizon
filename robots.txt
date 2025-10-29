@@ -1,0 +1,9 @@
+
+User-agent: *
+Allow: /
+Allow: /about
+Allow: /call
+Allow: /contact
+Allow: /website-build
+
+Sitemap: https://truehorizon.tech/sitemap.xml
