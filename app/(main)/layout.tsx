@@ -12,7 +12,7 @@ const figtree = Figtree({
 export const metadata: Metadata = {
   title: "True Horizon",
   description:
-    "True Horizon partners with executives and teams to identify high-ROI automation opportunities, upskill internal talent, and implement end-to-end AI infrastructure built for measurable business growth.",
+    "True Horizon partners with executives and teams to identify high-ROI automation opportunities, upskill internal talent, and implement end-to-end AI infrastructure built and web development for measurable business growth.",
   keywords: [
     "AI automation",
     "business growth",
@@ -23,6 +23,13 @@ export const metadata: Metadata = {
     "AI transformation",
     "automation strategy",
     "AI upskilling",
+    "web development",
+    "web design", 
+    "UI/UX",
+    "web developer",
+    "tech",
+    "freelancing agency",
+    "agency"
   ],
   authors: [{ name: "True Horizon" }],
   creator: "True Horizon",
@@ -43,14 +50,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://truehorizon.ai/",
+    url: "https://truehorizon.tech/",
     siteName: "True Horizon",
     title: "True Horizon",
     description:
-      "Empowering organizations to scale through AI automation, strategy, and workforce transformation.",
+      "Empowering organizations to scale through AI automation, strategy, web development and workforce transformation.",
     images: [
       {
-        url: "https://truehorizon.ai/og-image.jpg", // Replace with your real OG image URL
+        url: "https://truehorizon.tecg/website.png", // Replace with your real OG image URL
         width: 1200,
         height: 630,
         alt: "True Horizon - AI Business Solutions",
@@ -62,19 +69,18 @@ export const metadata: Metadata = {
     title: "True Horizon",
     description:
       "AI strategy and automation solutions designed to maximize ROI and drive organizational efficiency.",
-    site: "@truehorizon", // Replace with your Twitter handle if available
-    images: ["https://truehorizon.ai/og-image.jpg"], // Same as OG image
+    images: ["https://truehorizon.tech/website.png"], // Same as OG image
   },
-  category: "Artificial Intelligence, Automation, Business Consulting",
+  category: "Artificial Intelligence, Automation, Business Consulting, Web Development",
   alternates: {
-    canonical: "http\s://truehorizon.ai/",
+    canonical: "http\s://truehorizon.tech/",
   },
   icons: {
-    icon: "/favicon.ico",
-    apple: "/apple-touch-icon.png",
-    shortcut: "/favicon-32x32.png",
+    icon: "/star.ico",
+    apple: "/star.png",
+    shortcut: "/star.png",
   },
-  metadataBase: new URL("https://truehorizon.ai"),
+  metadataBase: new URL("https://truehorizon.tech"),
 };
 
 

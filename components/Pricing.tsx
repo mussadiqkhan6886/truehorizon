@@ -3,7 +3,6 @@
 import React from 'react'
 import Title from './Title'
 import { pricingData, variants2 } from '@/lib/constants'
-import Button from './Button'
 import { FiCheck } from 'react-icons/fi'
 import Link from 'next/link'
 import { cn } from '@/lib/utils'

@@ -3,7 +3,7 @@
 import { TextGenerateEffect } from '@/components/ui/TextGenerateEffect'
 import React from 'react'
 import Cal, { getCalApi } from "@calcom/embed-react";
-import { useEffect } from "react";
+import { useEffect } from "react";;
 
 const Call = () => {
   const Heading = "Book a Call with us";

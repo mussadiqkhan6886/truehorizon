@@ -1,5 +1,4 @@
 import React from 'react'
-import { InfiniteMovingCode } from './ui/Code'
 import { InfiniteMovingCards } from './ui/MovingCards'
 
 const Trusted = () => {

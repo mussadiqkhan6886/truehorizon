@@ -1,7 +1,7 @@
 import { processSteps } from '@/lib/constants'
 import React from 'react'
 import Button from '../Button'
-import { FiArrowDown, FiArrowDownCircle } from 'react-icons/fi'
+import { FiArrowDownCircle } from 'react-icons/fi'
 
 const Process = () => {
   return (
