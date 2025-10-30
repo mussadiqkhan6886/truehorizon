@@ -22,7 +22,7 @@ const Header = () => {
         setShow(false)
       }
     })
-  }, [window.innerWidth])
+  }, [])
 
   return (
     <header className='bg-black fixed top-0 z-50 w-full py-4 border-b border-gray-700/40 text-white px-6 md:px-12'>
