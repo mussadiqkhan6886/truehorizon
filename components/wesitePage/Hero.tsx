@@ -26,7 +26,7 @@ const Hero = () => {
             </div>
             <div className='flex z-50 gap-7 mt-5'>
                 <Button text='Get in touch' color='purple' icon={<FiArrowRight className='inline' />} link='/call' />
-                <Button text='View Services' color='gray' link='#services' />
+                <Button text='View Services' color='gray' link='#offers' />
             </div>
         </div>
     </section>
