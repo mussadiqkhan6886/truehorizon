@@ -9,16 +9,6 @@ import { FiX } from 'react-icons/fi'
 
 const Header = () => {
   const [show, setShow] = useState(false)
-
-  // Hide menu automatically when switching to desktop
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth >= 768) setShow(false)
-    }
-    window.addEventListener('resize', handleResize)
-    return () => window.removeEventListener('resize', handleResize)
-  }, [])
-
   return (
     <header className='bg-black fixed top-0 z-50 w-full py-4 border-b border-gray-700/40 text-white px-6 md:px-12 flex justify-between items-center '>
       

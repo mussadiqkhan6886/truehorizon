@@ -4,7 +4,7 @@ import Card from './Card';
 
 const Offers = () => {
   return (
-    <section className='bg-white text-black p-9 pt-16 md:p-16'>
+    <section className='bg-white text-black p-9 pt-16 md:p-16 max-w-5xl'>
       <div className='flex flex-col md:flex-row justify-between items-center'>
         <div className='flex gap-3 items-center'>
             <div className='w-2.5 mb-1 h-2.5 bg-fuchsia-800 rounded-full' />
