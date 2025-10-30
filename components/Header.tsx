@@ -25,8 +25,8 @@ const Header = () => {
   })
 
   return (
-    <header className='bg-black fixed top-0 z-50 w-full py-4 border-b border-gray-700/40 text-white px-6 md:px-12 flex justify-between items-center '>
-      <div className="bg-black animate-[slideDown_3s_ease-out_forwards]">
+    <header className='bg-black fixed top-0 z-50 w-full py-4 border-b border-gray-700/40 text-white px-6 md:px-12'>
+      <div className="bg-black animate-[slideDown_3s_ease-out_forwards] flex justify-between items-center ">
       <div className=''>
         <h1 className='font-[800] text-[20px]'>True Horizon</h1>
       </div>
