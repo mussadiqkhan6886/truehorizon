@@ -12,11 +12,11 @@ export const metadata: Metadata = {
     title: "Website development - True Horizon",
     description:
       "True Horizon combines innovation and technology to deliver intelligent automation and web development solutions that drive growth and transform operations.",
-    url: "https://truehorizon.tech/website-build",
+    url: "https://truehorizon.uk/website-build",
     siteName: "True Horizon",
     images: [
       {
-        url: "https://truehorizon.tech/website.png", // replace with your actual OG image path
+        url: "https://truehorizon.uk/website.png", // replace with your actual OG image path
         width: 1200,
         height: 630,
         alt: "True Horizon - About Us",
@@ -30,10 +30,10 @@ export const metadata: Metadata = {
     title: "Website Development - True Horizon",
     description:
       "Discover how True Horizon helps organizations scale with intelligent automation and web development solutions.",
-    images: ["https://truehorizon.tech/website.png"], // same as OG image
+    images: ["https://truehorizon.uk/website.png"], // same as OG image
   },
   alternates: {
-    canonical: "https://truehorizon.tech/website-build",
+    canonical: "https://truehorizon.uk/website-build",
   },
 };
 const Website = () => {

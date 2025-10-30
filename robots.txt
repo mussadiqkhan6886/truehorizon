@@ -6,4 +6,4 @@ Allow: /call
 Allow: /contact
 Allow: /website-build
 
-Sitemap: https://truehorizon.tech/sitemap.xml
+Sitemap: https://truehorizon.uk/sitemap.xml

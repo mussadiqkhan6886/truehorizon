@@ -50,7 +50,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://truehorizon.tech/",
+    url: "https://truehorizon.uk/",
     siteName: "True Horizon",
     title: "True Horizon",
     description:
@@ -69,18 +69,18 @@ export const metadata: Metadata = {
     title: "True Horizon",
     description:
       "AI strategy and automation solutions designed to maximize ROI and drive organizational efficiency.",
-    images: ["https://truehorizon.tech/website.png"], // Same as OG image
+    images: ["https://truehorizon.uk/website.png"], // Same as OG image
   },
   category: "Artificial Intelligence, Automation, Business Consulting, Web Development",
   alternates: {
-    canonical: "http\s://truehorizon.tech/",
+    canonical: "http\s://truehorizon.uk/",
   },
   icons: {
     icon: "/star.ico",
     apple: "/star.png",
     shortcut: "/star.png",
   },
-  metadataBase: new URL("https://truehorizon.tech"),
+  metadataBase: new URL("https://truehorizon.uk"),
 };
 
 
