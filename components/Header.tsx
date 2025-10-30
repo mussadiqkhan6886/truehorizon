@@ -2,7 +2,7 @@
 
 import { menu } from '@/lib/constants'
 import Link from 'next/link'
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import Button from './Button'
 import { FiMenu } from 'react-icons/fi'
 import { FiX } from 'react-icons/fi'
