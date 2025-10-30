@@ -1,24 +1,13 @@
-'use client';
-
 import Image from 'next/image'
 import React from 'react'
-import { motion } from 'framer-motion';
 
 const Card = ({image, category, description, id, services}: {image: string, category: string, description: string, id: number, services: string[]}) => {
-    const variant2 = {
-        hidden: {
-            opacity: 0
-        },
-        show: {
-            opacity: 1
-        }
-    }
   return (
     <section className='flex flex-col md:flex-row justify-between'>
       <div className='w-full md:w-[60%] md:p-16 px-24 pt-0'>
         <Image className='w-full h-full hidden md:block object-center object-cover' src={image} alt={category} width={200} height={200} />
       </div>
-      <motion.div variants={variant2} initial="hidden" whileInView={"show"} viewport={{once: true, amount: 0.2}} className='md:w-[60%] flex gap-6 md:gap-10 border-b border-zinc-800 py-10'>
+      <div className='md:w-[60%] flex gap-6 md:gap-10 border-b border-zinc-800 py-10'>
         <div>
             <p className='text-sm text-gray-700'>0{id}</p>
         </div>
@@ -31,7 +20,7 @@ const Card = ({image, category, description, id, services}: {image: string, cate
                 ) )}
             </div>
         </div>
-      </motion.div>
+      </div>
     </section>
   )
 }
