@@ -29,7 +29,8 @@ export const metadata: Metadata = {
     "web developer",
     "tech",
     "freelancing agency",
-    "agency"
+    "agency",
+    "true horizon",
   ],
   authors: [{ name: "True Horizon" }],
   creator: "True Horizon",
@@ -77,8 +78,8 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: "/star.ico",
-    apple: "/star.png",
-    shortcut: "/star.png",
+    apple: "/star.ico",
+    shortcut: "/star.ico",
   },
   metadataBase: new URL("https://truehorizon.uk"),
 };
@@ -92,7 +93,28 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link rel="icon" href="/star.ico" />
         <meta name="google-site-verification" content="RRRHPtTwSVSw9dAQAJV6ZPIBgtyQZo03ZPo5wIyBZec" />
+        <meta
+          name="description"
+          content="True Horizon partners with executives and teams to identify high-ROI automation opportunities, upskill internal talent, and implement end-to-end AI infrastructure built and web development for measurable business growth."
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "True Horizon",
+              url: "https://www.truehorizon.uk",
+              logo: "https://www.truehorizon.uk/star.ico",
+              // sameAs: [
+              //   "https://www.linkedin.com/company/truehorizon",
+              //   "https://twitter.com/truehorizon",
+              // ],
+            }),
+          }}
+        />
       </head>
       <body
         className={`${figtree.className} antialiased`}
