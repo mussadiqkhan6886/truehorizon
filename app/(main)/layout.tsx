@@ -77,9 +77,9 @@ export const metadata: Metadata = {
     canonical: "http\s://truehorizon.uk/",
   },
   icons: {
-    icon: "/star.ico",
-    apple: "/star.ico",
-    shortcut: "/star.ico",
+    icon: "/favicon.ico",
+    apple: "/favicon.ico",
+    shortcut: "/favicon.ico",
   },
   metadataBase: new URL("https://truehorizon.uk"),
 };
@@ -107,7 +107,7 @@ export default function RootLayout({
               "@type": "Organization",
               name: "True Horizon",
               url: "https://www.truehorizon.uk",
-              logo: "https://www.truehorizon.uk/star.ico",
+              logo: "https://www.truehorizon.uk/favicon.ico",
               // sameAs: [
               //   "https://www.linkedin.com/company/truehorizon",
               //   "https://twitter.com/truehorizon",
