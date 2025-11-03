@@ -58,7 +58,7 @@ export const metadata: Metadata = {
       "Empowering organizations to scale through AI automation, strategy, web development and workforce transformation.",
     images: [
       {
-        url: "https://truehorizon.tecg/website.png", // Replace with your real OG image URL
+        url: "https://truehorizon.uk/website.png", // Replace with your real OG image URL
         width: 1200,
         height: 630,
         alt: "True Horizon - AI Business Solutions",
@@ -74,7 +74,7 @@ export const metadata: Metadata = {
   },
   category: "Artificial Intelligence, Automation, Business Consulting, Web Development",
   alternates: {
-    canonical: "http\s://truehorizon.uk/",
+    canonical: "https://truehorizon.uk/",
   },
   icons: {
     icon: "/favicon.ico",
@@ -95,10 +95,8 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.ico" />
         <meta name="google-site-verification" content="RRRHPtTwSVSw9dAQAJV6ZPIBgtyQZo03ZPo5wIyBZec" />
-        <meta
-          name="description"
-          content="True Horizon partners with executives and teams to identify high-ROI automation opportunities, upskill internal talent, and implement end-to-end AI infrastructure built and web development for measurable business growth."
-        />
+      
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
