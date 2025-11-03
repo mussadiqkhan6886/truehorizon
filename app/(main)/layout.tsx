@@ -93,7 +93,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/star.ico" />
+        <link rel="icon" href="/favicon.ico" />
         <meta name="google-site-verification" content="RRRHPtTwSVSw9dAQAJV6ZPIBgtyQZo03ZPo5wIyBZec" />
         <meta
           name="description"
